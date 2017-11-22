@@ -1,0 +1,111 @@
+.goods
+	position relative
+	padding 45px 0 5px 0
+	width 100%
+	max-width 1920px
+	margin 0 auto
+	z-index 2
+	overflow hidden
+	&:before
+		content ''
+		position absolute
+		top 0
+		right 0
+		width 363px
+		height 451px
+		background-image url('../img/general/sheep.png')
+		z-index -1
+	&:after
+		content ''
+		position absolute
+		bottom 0
+		left 0
+		width 357px
+		height 387px
+		background-image url('../img/general/goods-stars.png')
+		z-index -1
+	.container
+		display flex
+		flex-direction column
+		align-items center
+		z-index 2
+		padding 0
+		
+.goods--title
+	position relative
+	font-size 30px
+	font-family CenturyGothicBold, san-setif
+	color #de6c9d
+	margin-bottom 40px
+	&:before
+		content ''
+		position absolute
+		top -13px
+		left 0px
+		transform translateX(-60%)
+		width 214px
+		height 37px
+		background-image url('../img/general/star-before.png')
+		background-repeat no-repeat
+	&:after
+		content ''
+		position absolute
+		top 10px
+		right -30px
+		transform translateX(100%)
+		width 104px
+		height 37px
+		background-image url('../img/general/star-after.png')
+		background-repeat no-repeat
+	
+.goods__list
+	display flex
+	flex-wrap wrap
+	justify-content center
+	
+.goods__list__item
+	position relative
+	display flex
+	flex-direction column
+	align-items center
+	margin 15px
+	margin-bottom 40px
+	max-width 230px
+	.goods__list__item--img
+		img
+			width 100%
+	&:hover
+		.goods__list__item--img
+			position relative
+			&:before
+				content 'Перейти в каталог'
+				position absolute
+				display flex
+				justify-content center
+				align-items center
+				color #fff
+				font-size 18px
+				font-family CenturyGothicBold
+				top 0px
+				left 0px
+				width 100%
+				height 100%
+				background-color rgba(35,34,32,0.5)
+				border 2px solid #7091f0
+				-webkit-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
+				-moz-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
+				box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
+
+.goods__list__item--img
+	width 100%
+	margin-bottom 20px
+	
+.goods__list__item--link
+	font-size 14px
+	font-family CenturyGothicBold, sans-serif
+	color #7091f0
+	border-bottom 2px solid #7091f0
+	text-align center
+	
+
+	

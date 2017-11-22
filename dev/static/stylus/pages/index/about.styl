@@ -1,0 +1,164 @@
+.about
+	position relative
+	padding 100px 0 46px 0
+	width 100%
+	max-width 1920px
+	margin 0 auto
+	overflow hidden
+	.container
+		display flex
+		flex-direction column
+		align-items center
+	&:before
+		content ''
+		position absolute
+		top 0
+		left 0
+		width 765px
+		height 476px
+		background-image url('../img/general/fly.png')
+		z-index -1
+	&:after
+		content ''
+		position absolute
+		bottom 0px
+		right 0px
+		width 445px
+		height 364px
+		background-image url('../img/general/girl.png')
+		z-index -1
+
+.about--title
+	position relative
+	font-size 30px
+	font-family CenturyGothicBold, sans-serif
+	color #7091f0
+	text-align center
+	margin-bottom 35px
+	&:before
+		content ''
+		position absolute
+		top -20px
+		left -17px
+		width 104px
+		height 38px
+		transform translate(-100%, 0)
+		background-image url('../img/general/star-about-before.png')
+	&:after
+		content ''
+		position absolute
+		bottom -15px
+		right -14px
+		width 104px
+		height 38px
+		transform translate(100%, 0)
+		background-image url('../img/general/star-about-after.png')
+
+.about__content
+	display flex
+	
+.about__content__left
+	width 100%
+	max-width 430px
+	display flex
+	flex-direction column
+	align-items center
+	// margin-right 70px
+	
+.about__content__left--img
+	width 100%
+	max-width 250px
+	display flex
+	justify-content center
+	align-items center
+	border-radius 50%
+	margin-bottom 25px
+	img
+		width 100%
+	
+.about__content__left--info
+	width 100%
+	display flex
+	flex-direction column
+	
+.about__content__left--info--descr
+	text-align left
+	font-size 15px
+	font-family CenturyGothicBold
+	color #a5a5a5
+	margin-bottom 6px
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	-webkit-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+
+.hidden
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	-webkit-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+	display none
+	
+.about__content__left--info__links
+	width 100%
+	display flex
+	justify-content space-between
+	
+.about__content__left--info__links--goblog
+	position relative
+	padding 6px
+	padding-left 39px
+	font-size 14px
+	font-family CenturyGothicBold, sans-serif
+	color #ff903f
+	text-decoration underline
+	&:before
+		content ''
+		position absolute
+		top 50%
+		left 0
+		width 28px
+		height 26px
+		transform translate(0, -50%)
+		background-image url('../img/general/goblog.png')
+	
+.about__content__left--info__links--readmore
+	position relative
+	padding 6px
+	font-size 14px
+	font-family CenturyGothicBold, sans-serif
+	color #7091f0
+	text-decoration underline
+	cursor pointer
+
+.about__content__right
+	width 100%
+	min-width 640px
+	display flex
+	flex-direction column
+	align-items center
+
+.about__content__right--video
+	height 100%
+	width 100%
+	max-height 320px
+	margin-top 20px
+	margin-bottom 30px
+	display flex
+	justify-content center
+	align-items center
+	border-radius 15px
+	overflow hidden
+	iframe
+		border-radius 15px
+		width 100%
+		max-width 425px
+		height 100%
+		
+.about__content__right--descr
+	font-size 16px
+	font-family CenturyGothicBold, sans-serif
+	color #a5a5a5
+
+	
+

@@ -1,0 +1,213 @@
+.main-footer
+	width 100%
+	max-width 1920px
+	margin 0 auto
+	
+.main-footer__top
+	width 100%
+	background-color #70caf0
+	padding 20px 0
+	.container
+		display flex
+		justify-content space-between
+
+.main-footer__subscription
+	width 100%
+	max-width 330px
+	display flex
+	flex-direction column
+	margin-right 10px
+
+.main-footer__subscription--logo
+	position relative
+	font-size 65px
+	font-family OldComedy, sans-serif
+	color #fff
+	margin-bottom 45px
+	&:before
+		content ''
+		position absolute
+		bottom 0px
+		left 0px
+		width 231px
+		height 22px
+		transform translateY(100%)
+		background-image url('../../static/img/general/footer-stars.png')
+
+.main-footer__subscription--title
+	font-size 18px
+	font-family CenturyGothicBold, sans-serif
+	color #7091f0
+	margin-bottom 30px
+
+.main-footer__subscription--descr
+	font-size 11px
+	font-family CenturyGothicBold, sans-serif
+	color #525151
+	line-height 2
+	margin-bottom 15px
+	max-width 240px
+	
+.main-footer__subscription__form
+	width 100%
+	display flex
+	.input-email
+		width 100%
+		max-width 199px
+		background-color #fff
+		border none
+		padding 15px
+		font-size 11px
+		font-family Verdana, sans-serif
+		color #979696
+	.input-sub
+		cursor pointer
+		width 100%
+		max-width 132px
+		border none
+		background-color #ff903f
+		padding 15px
+		font-size 11px
+		font-family Verdana, sans-serif
+		color #fff
+
+.main-footer__menu
+	align-self flex-start
+	width 100%
+	max-width 470px
+	display flex
+	flex-wrap wrap
+	margin-right 10px
+	.main-footer__menu--item
+		width 50%
+		-moz-transition all 0.2s ease-in-out
+		-o-transition all 0.2s ease-in-out
+		-webkit-transition all 0.2s ease-in-out
+		transition all 0.2s ease-in-out
+		&:hover
+			a
+				color #7091f0
+		&.heart-footer:hover
+			&:before
+				background-image url('../../static/img/general/b-heart-footer-blue.png')
+				a
+					color #7091f0
+		&:before
+			-moz-transition all 0.2s ease-in-out
+			-o-transition all 0.2s ease-in-out
+			-webkit-transition all 0.2s ease-in-out
+			transition all 0.2s ease-in-out
+		a
+			-moz-transition all 0.2s ease-in-out
+			-o-transition all 0.2s ease-in-out
+			-webkit-transition all 0.2s ease-in-out
+			transition all 0.2s ease-in-out
+			display block
+			width 100%
+			padding 10px 10px 10px 0
+			font-size 16px
+			font-family CenturyGothicBold, sans-serif
+			color #fff
+
+.main-footer__contacts
+	display flex
+	flex-direction column
+	justify-content space-between
+	
+.main-footer__contacts__phones
+	position relative
+	margin-top 10px
+	display flex
+	flex-direction column
+	padding-left 39px
+	&:before
+		content ''
+		position absolute
+		top 50%
+		left 0px
+		transform translateY(-65%)
+		width 24px
+		height 23px
+		background-image url('../../static/img/general/footer-phone.png')
+
+.main-footer__contacts__phones--item
+	font-size 22px
+	font-family CenturyGothicBold, sans-serif
+	color #fff
+	margin-bottom 10px
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	-webkit-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+	&:hover
+		opacity 0.5
+	.violet
+		font-size 18px
+		color #7091f0
+		background-color transparent
+
+.main-footer__contacts__social--title
+	font-size 18px
+	font-family RobotoBold, sans-serif
+	color #7091f0
+	margin-bottom 10px
+	text-align center
+	
+.main-footer__contacts__social__list
+	display flex
+	justify-content center
+	.main-footer__contacts__social__list--item
+		width 100%
+		max-width 31px
+		margin-right 10px
+		-moz-transition all 0.2s ease-in-out
+		-o-transition all 0.2s ease-in-out
+		-webkit-transition all 0.2s ease-in-out
+		transition all 0.2s ease-in-out
+		&:hover
+			opacity 0.5
+		a
+			width 100%
+			img
+				width auto
+				max-width 31px
+
+.main-footer__bottom
+	width 100%
+	padding 15px 0
+	background-color #7091f0
+	.container
+		display flex
+		justify-content center
+
+.main-footer__bottom--copyright
+	font-size 12px
+	font-family RobotoBold, sans-serif
+	color #fff
+	
+.heart-footer
+	a
+		padding-right 10px
+	position relative
+	&:before
+		content ''
+		position absolute
+		top 50%
+		left 50px
+		transform translateY(-50%)
+		width 11px
+		height 11px
+		background-image url('../../../static/img/general/b-heart-footer.png')
+		background-repeat no-repeat
+		background-position center center
+		z-index 1
+
+.main-footer__menu .main-footer__menu--item.active-page
+	a
+		color #7091f0
+			
+.main-footer__menu .main-footer__menu--item.heart-footer.active-page
+	&:before
+		background-image url('../../static/img/general/b-heart-footer-blue.png')
+	a
+		color #7091f0

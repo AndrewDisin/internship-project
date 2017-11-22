@@ -1,0 +1,106 @@
+.main-banner
+	position relative
+	width 100%
+	max-width 1920px
+	margin 0 auto
+	
+.main-banner__slider
+	position relative
+	width 100%
+	.slick-dots
+		li
+			margin-right 11px
+			&:last-child
+				margin-right 0
+		.slick-active
+			button
+				background-color #fff
+				border 5px solid #fff	
+		position absolute
+		display flex !important
+		bottom 40px
+		left 50%
+		transform translateX(-50%)
+		button
+			cursor pointer
+			background-color transparent
+			border-radius 50%
+			border 2px solid #fff
+			font-size 0
+			width 9px
+			height 9px
+			padding 0
+			&:hover
+				background-color #fff
+				border 5px solid #fff
+				
+.main-banner__slider--item
+	width 100%
+	display flex
+	justify-content center
+	align-items center
+	img
+		width 100%
+	
+.main-banner__form
+	position absolute
+	right 19.8%
+	bottom 55px
+	z-index 2
+	background-image url('../img/general/form-bg.png')
+	background-size 100% 100%
+	min-width 200px
+	form
+		display flex
+		flex-direction column
+		width 100%
+		max-width 200px
+		padding 50px 20px 45px 20px
+	
+.form-title
+	font-size 15px
+	font-family CenturyGothicBold
+	color #fff
+	text-align center
+	width 100%
+	margin-bottom 10px
+	
+.form-subtitle
+	font-size 11px
+	font-family CenturyGothicRegular, sans-serif
+	color #fff
+	text-align center
+	margin-bottom 10px
+	
+.input-name
+	width 100%
+	border-radius 5px
+	background-color #fff
+	border none
+	margin-bottom 7px
+	padding 5px 10px
+	color #969696
+	font-size 11px
+	font-family CenturyGothicRegular, sans-serif
+	
+.input-phone
+	width 100%
+	border-radius 5px
+	background-color #fff
+	border none
+	margin-bottom 14px
+	padding 5px 10px
+	color #969696
+	font-size 11px
+	font-family CenturyGothicRegular, sans-serif
+	
+.input-submit
+	cursor pointer
+	width 100%
+	border-radius 20px
+	background-color #ff6c00
+	border none
+	padding 5px 10px
+	color #fff
+	font-size 11px
+	font-family CenturyGothicBold, sans-serif

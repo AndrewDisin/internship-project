@@ -1,0 +1,68 @@
+include ../mixins
+block variables
+
+doctype html
+html(lang="ru-RU")
+	head
+		meta(charset="utf-8")
+		title #{title}
+		meta(http-equiv='X-UA-Compatible', content="IE = edge")
+		meta(name="viewport" content="width=device-width,initial-scale=1")
+		meta(name="keywords" content="")
+
+		link(rel="stylesheet" type='text/css' href="static/css/main.css")
+
+		<!--[if lt IE 9]>
+		script(src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js")
+		<![endif]-->
+	body
+		include ../modules/header
+		include ../modules/menu
+		main
+			block content
+		include ../modules/footer
+		.back-call-popup
+			.back-call-popup__container
+				.close-form-btn.backcall
+					img(src="../../static/img/general/close-form-btn.png", alt="Close")
+				form.back-call-popup__container--form.backcall-form
+					.backcall-form--title Замовити дзвінок
+					input.backcall-form--input-name(type="text" name='name' id="back-call-name" placeholder="Ваше ім'я")
+					input.backcall-form--input-phone(type="text" name='phone' id="back-call-phone" placeholder="Ваш телефон")
+					input.backcall-form--input-submit(type="submit" name='back-call-submit' id="back-call-submit" value="Відправити")
+		.login-popup
+			.login-popup__container
+				.close-form-btn.login
+					img(src="../../static/img/general/close-form-btn.png", alt="Close")
+				ul.login-popup__container__list
+					li.login-popup__container__list--item.active-tab
+						a(href="#login") Увійти
+					li.login-popup__container__list--item
+						a(href="#registr") Зареєструватись
+				.login-popup__container__tabs
+					.login-popup__container__tabs--item#login.active
+						form.login-form
+							input(type="text" name='name' id="login-form-name" placeholder="Ваше ім'я").login-form-input-name
+							input(type="password" name='password' id="login-form-pass" placeholder="Ваш пароль").login-form-input-pass
+							input.login-form--input-submit(type="submit" name='login-form-submit' id="login-form-submit" value="Відправити")
+							a(href="#").forget-pass Забули пароль?
+					.login-popup__container__tabs--item#registr
+						form.registr-form
+							input(type="text" name='name' id="registr-form-name" placeholder="Ваше ім'я").registr-form-input-name
+							input(type="text" name='family' id="registr-form-family" placeholder="Ваше прізвище").registr-form-input-family
+							input(type="email" name='email' id="registr-form-email" placeholder="Ваш email").registr-form-input-family
+							input(type="password" name='password' id="registr-form-pass" placeholder="Ваш пароль").registr-form-input-pass
+							input(type="password2" name='password2' id="registr-form-pass2" placeholder="Повторити пароль").registr-form-input-pass2
+							label.checkbox
+								input(type="checkbox")
+								span.custom-checkbox
+								span.checkbox-text Підписатися на розсилку
+							label.checkbox
+								input(type="checkbox")
+								span.custom-checkbox
+								span.checkbox-text Згоден з політикою конфіденційності
+							input.registr-form--input-submit(type="submit" name='registr-form-submit' id="registr-form-submit" value="Відправити")
+		script(src="static/js/jquery.js")
+		script(src="static/js/libs.min.js")
+		script(src="static/js/main.js")
+		block script

@@ -1,0 +1,166 @@
+.bold
+	font-size 24px
+	position relative
+	bottom -2px
+	line-height 18px
+
+.main-header__menu
+	width 100%
+	max-width 1920px
+	margin 0 auto
+	background-color #ffda39
+	z-index 3
+	
+.main-header__nav
+	width 100%
+	
+.main-header__nav__list
+	display flex
+
+.main-header__nav__list--item.active-page
+	a
+		&:before
+				display block
+	
+.main-header__nav__list--item
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	-webkit-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+	&:hover
+		a
+			&:before
+				display block
+	flex-grow 1
+	a
+		position relative
+		display block
+		padding 15px 10px
+		color #fff
+		font-size 18px
+		font-family CenturyGothicBold, sans-serif
+		height 100%
+		&:first-child
+			padding-right 13.6px
+		&:hover
+			&:before
+				display block
+				
+		&:before
+			display none
+			content ''
+			position absolute
+			bottom 0
+			left 0
+			transform translateY(100%)
+			width 100%
+			height 10px
+			z-index 2
+			-webkit-clip-path polygon(100% 0, 100% 100%, 50% 0, 0 100%, 0 0)
+			clip-path polygon(100% 0, 100% 100%, 50% 0, 0 100%, 0 0)
+
+.blue
+	background-color #70caf0
+	&:before
+		background-color #70caf0
+
+.broun
+	background-color #e78761
+	&:before
+		background-color #e78761
+	
+.pink
+	background-color #f893bb
+	&:before
+		background-color #f893bb
+	
+.red
+	background-color #e45c5c
+	&:before
+		background-color #e45c5c
+	
+.yellow
+	background-color #ffda39
+	&:before
+		background-color #ffda39
+	
+.violet
+	background-color #dbc4e1
+	&:before
+		background-color #dbc4e1
+	
+.lilac
+	background-color #ff579a
+	&:before
+		background-color #ff579a
+	
+.mobile-menu
+	position relative
+	display none
+	justify-content space-between
+	align-items center
+	
+.mobile-menu__list
+	background-color #e78761
+	padding 30px 20px 20px 20px 
+	position absolute
+	display none
+	flex-direction column
+	bottom 5px
+	left 5px
+	transform translateY(100%)
+	min-width 280px
+	z-index 10
+	-webkit-clip-path polygon(100% 10px, 100% 100%, 0 100%, 0 10px, 2% 10px, 5.5% 0, 9% 10px)
+	clip-path polygon(100% 10px, 100% 100%, 0 100%, 0 10px, 2% 10px, 5.5% 0, 9% 10px)
+
+.mobile-menu__list.active-popup
+	display flex
+
+.mobile-menu__list--item
+	width 100%
+	a
+		display block
+		padding 10px
+		color #fff
+		font-size 18px
+		font-family CenturyGothicBold, sans-serif
+		&:hover
+			text-decoration underline
+
+
+.mobile-menu--icon
+	cursor pointer
+	width 100%
+	max-width 44px
+	padding 10px
+	img
+		width auto
+		max-width 100%
+		
+.main-header__top__search--input
+	background-color #fff
+	border-color #ff6500
+
+.main-header__bottom__basket--link
+	color #ff6500
+	border-color #ff6500
+
+.main-header__nav__list--item.heart a
+	padding-right 30px
+	
+.heart
+	a
+		padding-right 100px
+	position relative
+	&:before
+		content ''
+		position absolute
+		top 50%
+		right 8px
+		transform translateY(-50%)
+		width 18px
+		height 17px
+		background-image url('../../../static/img/general/b-heart.png')
+		z-index 1
+	

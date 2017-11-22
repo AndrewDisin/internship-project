@@ -1,0 +1,65 @@
+section.content.basket
+	.container
+		ul.content__bread-crumbs
+			li.content__bread-crumbs--item
+				a(href="#") Головна
+			li.content__bread-crumbs--item.lilac-text
+				a Кошик
+		.basket--title Оформлення замовлення
+		.basket__info
+			.basket__info__form
+				label(for="payment")
+					select(name='payment' id='payment')
+						option Виберіть спосіб оплати
+						option Виберіть спосіб оплати2
+						option Виберіть спосіб оплати3
+				label(for="post")
+					select(name='post' id='post')
+						option Нова Пошта
+						option Нова Пошта2
+						option Нова Пошта3
+				input(type="text" name='name' id='basket-form-name' placeholder="Ваше ім'я")
+				input(type="text" name='family' id='basket-form-family' placeholder="Ваше прізвище")
+				label(for="place")
+					select(name='place' id='place')
+						option Вибрати місто
+						option Вибрати місто2
+						option Вибрати місто3
+				label(for="department")
+					select(name='department' id='department')
+						option Вибрати місто
+						option Вибрати місто2
+						option Вибрати місто3
+				input(type="tel" name='tel' id='basket-form-tel' placeholder="Ваш телефон")
+				input(type="submit" name='basket-form-submit' id='basket-form-tel' value="продовжити покупки").basket-form-submit
+			.basket-items
+				.basket__list
+					.basket__list__item
+						.basket__list__item--img
+							img(src="../../../static/img/content/basket/item1.png", alt="Item1")
+						.basket__list__item__right
+							.basket__list__item__right--title Віночок із штучних квітів
+							.basket__list__item__right--price 350 грн
+								.basket__list__item__right__calc
+									label(for="count").basket__list__item__right__calc--kil  Кількість
+										input(type="number" name="count" id="count" placeholder="1")
+									span.basket__list__item__right__calc--descr В наявності
+								.basket__list__item__right__price
+									.basket__list__item__right__price--descr До оплати
+									.basket__list__item__right__price--cost 350 грн
+					.basket__list__item
+						.basket__list__item--img
+							img(src="../../../static/img/content/basket/item1.png", alt="Item1")
+						.basket__list__item__right
+							.basket__list__item__right--title Віночок із штучних квітів
+							.basket__list__item__right--price 350 грн
+								.basket__list__item__right__calc
+									label(for="count").basket__list__item__right__calc--kil  Кількість
+										input(type="number" name="count" id="count" placeholder="1")
+									span.basket__list__item__right__calc--descr В наявності
+								.basket__list__item__right__price
+									.basket__list__item__right__price--descr До оплати
+									.basket__list__item__right__price--cost 350 грн
+				a(href="#").basket__order-btn оформити замовлення
+
+
