@@ -14,8 +14,8 @@ $(document).ready(function () {
     $('.mobile-menu__list').toggleClass('active-popup')
   });
 
-  $('.about__content__left--info__links--readmore').click(function(){
-    $('.about__content__left--info--descr sapn').toggleClass('hidden');
+  $('.info__readmore').click(function(){
+    $('.info__descr sapn').toggleClass('hidden');
   });
 
 
