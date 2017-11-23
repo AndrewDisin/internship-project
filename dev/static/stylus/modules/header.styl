@@ -8,16 +8,26 @@
 	width 100%
 	max-width 1920px
 	margin 0 auto
-	.container
-		display flex
-		flex-direction column
+
+.main-header__container
+	width 100%
+	max-width 1200px
+	padding 0 15px
+	margin 0 auto
+	display flex
+	flex-direction column
 
 .main-header__top
 	display flex
 	justify-content space-between
 	align-items flex-start
 	
-.main-header__top__work-time
+.main-header__bottom
+	display flex
+	justify-content flex-start
+	align-items flex-end
+	
+.work-time
 	position relative
 	padding-left 40px
 	display flex
@@ -32,23 +42,23 @@
 		height 24px
 		background-image url('../img/general/calendar.png')
 
-.main-header__top__work-time--time
+.work-time__time
 	font-size 18px
 	font-family CenturyGothicBold, sans-serif
 	color #7091f0
 	margin-bottom 5px
 	
-.main-header__top__work-time--descr
+.work-time__descr
 	font-size 12px
 	font-family CenturyGothicBold, sans-serif
 	color #7091f0
 
-.main-header__top__contacts
+.contacts
 	display flex
 	flex-direction column
 	align-items center
 
-.main-header__top__contacts-phones
+.phones
 	position relative
 	padding-left 36px
 	display flex
@@ -64,7 +74,7 @@
 		height 24px
 		background-image url('../img/general/phone.png')
 		
-.main-header__top__contacts--phone
+.phones__phone
 	-moz-transition all 0.2s ease-in-out
 	-o-transition all 0.2s ease-in-out
 	-webkit-transition all 0.2s ease-in-out
@@ -81,7 +91,7 @@
 .orange
 	color #ff6c00
 		
-.main-header__top__contacts-btn
+.call-btn
 	width 100%
 	max-width 165px
 	padding 8px
@@ -98,7 +108,7 @@
 	&:hover
 		opacity 0.5
 
-.main-header__top__search
+.search
 	position relative
 	&:before
 		content ''
@@ -110,7 +120,7 @@
 		height 18px
 		background-image url('../img/general/search.png')
 	
-.main-header__top__search--input
+.search__input
 	background-color transparent
 	border 1px solid #70caf0
 	border-radius 20px
@@ -120,7 +130,7 @@
 	color #70caf0
 	text-align right
 	
-.main-header__top__login
+.login
 	position relative
 	padding-left 38px
 	-moz-transition all 0.2s ease-in-out
@@ -138,30 +148,28 @@
 		width 24px
 		height 20px
 		background-image url('../img/general/login.png')
-	a
-		font-size 18px
-		font-family CenturyGothicBold, sans-serif
-		color #7091f0
+		
+.login__link
+	font-size 18px
+	font-family CenturyGothicBold, sans-serif
+	color #7091f0
 
-.main-header__bottom
-	display flex
-	justify-content flex-start
-	align-items flex-end
+
 	
-.main-header__bottom--logo
+.logo
 	font-size 65px
 	font-family OldComedy, sans-serif
 	color #ff579a
 	font-weight 600
 	margin-right 50px
 	
-.main-header__bottom--tagline
+.tagline
 	font-size 31px
 	font-family LobsterRegular, sans-serif
 	color #e095f4
 	margin-right 45px
 
-.main-header__bottom__basket
+.basket
 	position relative
 	display flex
 	align-items center
@@ -177,7 +185,7 @@
 		height 21px
 		background-image url('../img/general/basket.png')
 	
-.main-header__bottom__basket--link
+.basket__link
 	font-size 18px
 	font-family CenturyGothicBold, sans-serif
 	color #7091f0
@@ -191,7 +199,7 @@
 	&:hover
 		opacity 0.5
 	
-.main-header__bottom__basket--count
+.basket__count
 	position relative
 	padding 10px
 	border 1px solid #ff740e
@@ -212,11 +220,3 @@
 		height 170px
 		background-image url('../img/general/fairy.png')
 		z-index -1
-
-// .main-header__top__search--icon
-// 	display none
-// 	width 100%
-// 	max-width 32px
-// 	justify-content center
-// 	align-items center
-

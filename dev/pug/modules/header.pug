@@ -1,26 +1,24 @@
-header.main-header
-	.container
-		.main-header__top
-			.main-header__top__work-time
-				.main-header__top__work-time--time Пн-Сб з 9:00 до 20:00
-				.main-header__top__work-time--descr Замовлення онлайн цілодобово
-			.main-header__top__contacts
-				.main-header__top__contacts-phones
-					a(href="tel:809688877766").main-header__top__contacts--phone <span class='orange'>(8096)</span> 888-777-66
-					a(href="tel:809688877766").main-header__top__contacts--phone <span class='orange'>(8096)</span> 888-777-66
-				a(href="#").main-header__top__contacts-btn зворотній зв'язок
-			.main-header__top__search
-				//- a(href="#").main-header__top__search--icon
-				//- 	img(src="../../static/img/general/search.png", alt="Search")
-				input(type="text").main-header__top__search--input
-			.main-header__top__login
-				a(href="#") Увійти
-		.main-header__bottom
-			a(href="#").main-header__bottom--logo 4My Doll
-			.main-header__bottom--tagline Здійсніть дитячу мрію – подаруйте казку !
-			a(href="basket.html").main-header__bottom__basket
-				.main-header__bottom__basket--link Кошик
-				.main-header__bottom__basket--count 0
++b.HEADER.main-header
+	+e.container
+		+e.top
+			+b.work-time
+				+e.time Пн-Сб з 9:00 до 20:00
+				+e.descr Замовлення онлайн цілодобово
+			+b.contacts
+				+b.phones
+					+e.A.phone(href="tel:809688877766") <span class='orange'>(8096)</span> 888-777-66
+					+e.A.phone(href="tel:809688877766") <span class='orange'>(8096)</span> 888-777-66
+				+b.A.call-btn(href="#") зворотній зв'язок
+			+b.search
+				+e.INPUT.input(type="search")
+			+b.login
+				+e.A.link(href="#") Увійти
+		+e.bottom
+			+b.A.logo(href="#") 4My Doll
+			+b.tagline Здійсніть дитячу мрію – подаруйте казку !
+			+b.A.basket(href="basket.html")
+				+e.link Кошик
+				+e.count 0
 
 
 
