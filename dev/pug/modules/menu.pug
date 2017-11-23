@@ -1,36 +1,36 @@
-.main-header__menu
-	.container
-		.mobile-menu
-			.mobile-menu--icon
-				img(src="../../static/img/general/menu (1).svg", alt="Mobile menu")
-			ul.mobile-menu__list
-				li.mobile-menu__list--item
-					a(href="index.html") Головна
-				li.mobile-menu__list--item
-					a(href="catalog.html") Каталог товарів
-				li.mobile-menu__list--item
-					a(href="room.html") Дитяча кімната
-				li.mobile-menu__list--item
-					a(href="newyear.html") Новорічний декор
-				li.mobile-menu__list--item
-					a(href="packaging.html") Подарункова упаковка
-				li.mobile-menu__list--item
-					a(href="blog.html") Блог і &#9825
-				li.mobile-menu__list--item
-					a(href="delivery.html") Оплата і доставка
-		nav.main-header__nav
-			ul.main-header__nav__list
-				li.main-header__nav__list--item.active-page
-					a(href="index.html").blue Головна
-				li.main-header__nav__list--item
-					a(href="catalog.html").broun Каталог товарів
-				li.main-header__nav__list--item
-					a(href="room.html").pink Дитяча кімната
-				li.main-header__nav__list--item
-					a(href="newyear.html").red Новорічний декор
-				li.main-header__nav__list--item
-					a(href="packaging.html").yellow Подарункова упаковка
-				li.main-header__nav__list--item.heart
-					a(href="blog.html").violet Блог і 
-				li.main-header__nav__list--item
-					a(href="delivery.html").lilac Оплата і доставка
++b.menu
+	+e.container
+		+b.mobile-menu
+			+b.icon
+				+e.IMG.img(src="../../static/img/general/menu (1).svg", alt="Mobile menu")
+			+e.UL.list
+				+b.LI.m-list-item
+					+e.A.link(href="index.html") Головна
+				+b.LI.m-list-item
+					+e.A.link(href="catalog.html") Каталог товарів
+				+b.LI.m-list-item
+					+e.A.link(href="room.html") Дитяча кімната
+				+b.LI.m-list-item
+					+e.A.link(href="newyear.html") Новорічний декор
+				+b.LI.m-list-item
+					+e.A.link(href="packaging.html") Подарункова упаковка
+				+b.LI.m-list-item
+					+e.A.link(href="blog.html") Блог і &#9825
+				+b.LI.m-list-item
+					+e.A.link(href="delivery.html") Оплата і доставка
+		+b.NAV.nav
+			+e.UL.nav-list
+				+b.LI.list-item_active-page
+					+e.A.link_blue(href="index.html") Головна
+				+b.LI.list-item
+					+e.A.link_broun(href="catalog.html") Каталог товарів
+				+b.LI.list-item
+					+e.A.link_pink(href="room.html") Дитяча кімната
+				+b.LI.list-item
+					+e.A.link_red(href="newyear.html") Новорічний декор
+				+b.LI.list-item
+					+e.A.link_yellow(href="packaging.html") Подарункова упаковка
+				+b.LI.list-item_heart
+					+e.A.link_violet(href="blog.html") Блог і 
+				+b.LI.list-item
+					+e.A.link_lilac(href="delivery.html") Оплата і доставка
