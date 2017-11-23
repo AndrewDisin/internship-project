@@ -3,22 +3,27 @@
 	max-width 1920px
 	margin 0 auto
 	
-.main-footer__top
+.footer-top
 	width 100%
 	background-color #70caf0
 	padding 20px 0
-	.container
-		display flex
-		justify-content space-between
+	
+.footer-top__container
+	width 100%
+	max-width 1200px
+	padding 0 15px
+	margin 0 auto
+	display flex
+	justify-content space-between
 
-.main-footer__subscription
+.subscription
 	width 100%
 	max-width 330px
 	display flex
 	flex-direction column
 	margin-right 10px
 
-.main-footer__subscription--logo
+.f-logo
 	position relative
 	font-size 65px
 	font-family OldComedy, sans-serif
@@ -34,13 +39,13 @@
 		transform translateY(100%)
 		background-image url('../../static/img/general/footer-stars.png')
 
-.main-footer__subscription--title
+.subscription__title
 	font-size 18px
 	font-family CenturyGothicBold, sans-serif
 	color #7091f0
 	margin-bottom 30px
 
-.main-footer__subscription--descr
+.subscription__descr
 	font-size 11px
 	font-family CenturyGothicBold, sans-serif
 	color #525151
@@ -48,73 +53,78 @@
 	margin-bottom 15px
 	max-width 240px
 	
-.main-footer__subscription__form
+.f-form
 	width 100%
 	display flex
-	.input-email
-		width 100%
-		max-width 199px
-		background-color #fff
-		border none
-		padding 15px
-		font-size 11px
-		font-family Verdana, sans-serif
-		color #979696
-	.input-sub
-		cursor pointer
-		width 100%
-		max-width 132px
-		border none
-		background-color #ff903f
-		padding 15px
-		font-size 11px
-		font-family Verdana, sans-serif
-		color #fff
+	
+.f-form__input-email
+	width 100%
+	max-width 199px
+	background-color #fff
+	border none
+	padding 15px
+	font-size 11px
+	font-family Verdana, sans-serif
+	color #979696
+	
+.f-form__input-sub
+	cursor pointer
+	width 100%
+	max-width 132px
+	border none
+	background-color #ff903f
+	padding 15px
+	font-size 11px
+	font-family Verdana, sans-serif
+	color #fff
 
-.main-footer__menu
+.f-menu
 	align-self flex-start
 	width 100%
 	max-width 470px
 	display flex
 	flex-wrap wrap
 	margin-right 10px
-	.main-footer__menu--item
-		width 50%
+	
+.f-menu-item
+	width 50%
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	-webkit-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+	&:hover
+		a
+			color #7091f0
+	&:before
 		-moz-transition all 0.2s ease-in-out
 		-o-transition all 0.2s ease-in-out
 		-webkit-transition all 0.2s ease-in-out
 		transition all 0.2s ease-in-out
-		&:hover
-			a
-				color #7091f0
-		&.heart-footer:hover
-			&:before
-				background-image url('../../static/img/general/b-heart-footer-blue.png')
-				a
-					color #7091f0
-		&:before
-			-moz-transition all 0.2s ease-in-out
-			-o-transition all 0.2s ease-in-out
-			-webkit-transition all 0.2s ease-in-out
-			transition all 0.2s ease-in-out
+		
+.f-menu-item__link
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	-webkit-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+	display block
+	width 100%
+	padding 10px 10px 10px 0
+	font-size 16px
+	font-family CenturyGothicBold, sans-serif
+	color #fff
+		
+.f-menu-item_heart-footer:hover
+	&:before
+		background-image url('../../static/img/general/b-heart-footer-blue.png')
 		a
-			-moz-transition all 0.2s ease-in-out
-			-o-transition all 0.2s ease-in-out
-			-webkit-transition all 0.2s ease-in-out
-			transition all 0.2s ease-in-out
-			display block
-			width 100%
-			padding 10px 10px 10px 0
-			font-size 16px
-			font-family CenturyGothicBold, sans-serif
-			color #fff
+			color #7091f0
 
-.main-footer__contacts
+.f-contacts
 	display flex
 	flex-direction column
 	justify-content space-between
 	
-.main-footer__contacts__phones
+.f-phones
 	position relative
 	margin-top 10px
 	display flex
@@ -130,7 +140,7 @@
 		height 23px
 		background-image url('../../static/img/general/footer-phone.png')
 
-.main-footer__contacts__phones--item
+.f-phones__item
 	font-size 22px
 	font-family CenturyGothicBold, sans-serif
 	color #fff
@@ -141,51 +151,60 @@
 	transition all 0.2s ease-in-out
 	&:hover
 		opacity 0.5
-	.violet
-		font-size 18px
-		color #7091f0
-		background-color transparent
+		
+.violet
+	font-size 18px
+	color #7091f0
+	background-color transparent
 
-.main-footer__contacts__social--title
+.f-social__title
 	font-size 18px
 	font-family RobotoBold, sans-serif
 	color #7091f0
 	margin-bottom 10px
 	text-align center
 	
-.main-footer__contacts__social__list
+.social-list
 	display flex
 	justify-content center
-	.main-footer__contacts__social__list--item
-		width 100%
-		max-width 31px
-		margin-right 10px
-		-moz-transition all 0.2s ease-in-out
-		-o-transition all 0.2s ease-in-out
-		-webkit-transition all 0.2s ease-in-out
-		transition all 0.2s ease-in-out
-		&:hover
-			opacity 0.5
-		a
-			width 100%
-			img
-				width auto
-				max-width 31px
+	
+.soc-item
+	width 100%
+	max-width 31px
+	margin-right 10px
+	-moz-transition all 0.2s ease-in-out
+	-o-transition all 0.2s ease-in-out
+	-webkit-transition all 0.2s ease-in-out
+	transition all 0.2s ease-in-out
+	&:hover
+		opacity 0.5
 
-.main-footer__bottom
+.soc-item__link
+	width 100%
+
+.soc-item__img
+	width auto
+	max-width 31px
+
+.footer-bottom
 	width 100%
 	padding 15px 0
 	background-color #7091f0
-	.container
-		display flex
-		justify-content center
 
-.main-footer__bottom--copyright
+.footer-bottom__container
+	width 100%
+	max-width 1200px
+	padding 0 15px
+	margin 0 auto
+	display flex
+	justify-content center
+
+.footer-bottom__copyright
 	font-size 12px
 	font-family RobotoBold, sans-serif
 	color #fff
 	
-.heart-footer
+.f-menu-item_heart-footer
 	a
 		padding-right 10px
 	position relative
@@ -202,11 +221,11 @@
 		background-position center center
 		z-index 1
 
-.main-footer__menu .main-footer__menu--item.active-page
+.f-menu .f-menu-item_active-page
 	a
 		color #7091f0
 			
-.main-footer__menu .main-footer__menu--item.heart-footer.active-page
+.f-menu .f-menu-item_heart-footer .f-menu-item_active-page
 	&:before
 		background-image url('../../static/img/general/b-heart-footer-blue.png')
 	a

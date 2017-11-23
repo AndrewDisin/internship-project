@@ -1,44 +1,44 @@
-footer.main-footer
-	.main-footer__top
-		.container
-			.main-footer__subscription
-				a(href="#").main-footer__subscription--logo 4My Doll
-				.main-footer__subscription--title Підписка
-				.main-footer__subscription--descr Вас повідомлять першими про різні акції і спеціальні пропозиції.
-				form.main-footer__subscription__form(id='subscription-form')
-					input(type="email" name="email" id="email" placeholder="Ваш email").input-email
-					input(type="submit" name="subscription-submit" id="subscription-submit" value="Підписатися").input-sub
-			ul.main-footer__menu
-				li.main-footer__menu--item.active-page
-					a(href="#") Головна
-				li.main-footer__menu--item
-					a(href="#") Каталог товарів
-				li.main-footer__menu--item
-					a(href="#") Дитяча кімната
-				li.main-footer__menu--item
-					a(href="#") Новорічний декор
-				li.main-footer__menu--item
-					a(href="#") Подарункова упаковка
-				li.main-footer__menu--item.heart-footer
-					a(href="#") Блог і
-				li.main-footer__menu--item
-					a(href="#") Оплата і доставка
-			.main-footer__contacts
-				.main-footer__contacts__phones
-					a(href="tel:8096888777666").main-footer__contacts__phones--item <span class="violet">(8096) </span>888-777-666
-					a(href="tel:8096888777666").main-footer__contacts__phones--item <span class="violet">(8096) </span>888-777-666
-				.main-footer__contacts__social
-					.main-footer__contacts__social--title Розповісти про нас
-					.main-footer__contacts__social__list
-						.main-footer__contacts__social__list--item
-							a(href="#")
-								img(src="../../static/img/general/facebook.png", alt="Facebook")
-						.main-footer__contacts__social__list--item
-							a(href="#")
-								img(src="../../static/img/general/instagram.png", alt="Instagram")
-						.main-footer__contacts__social__list--item
-							a(href="#")
-								img(src="../../static/img/general/tweeter.png", alt="Tweeter")
-	.main-footer__bottom
-		.container
-			.main-footer__bottom--copyright ©2017 Все права защищены.
++b.FOOTER.main-footer
+	+b.footer-top
+		+e.container
+			+b.subscription
+				+b.A.f-logo(href="#") 4My Doll
+				+e.title Підписка
+				+e.descr Вас повідомлять першими про різні акції і спеціальні пропозиції.
+				+b.FORM.f-form(id='subscription-form')
+					+e.INPUT.input-email(type="email" name="email" id="email" placeholder="Ваш email")
+					+e.INPUT.input-sub(type="submit" name="subscription-submit" id="subscription-submit" value="Підписатися")
+			+b.UL.f-menu
+				+b.LI.f-menu-item_active-page
+					+e.A.link(href="#") Головна
+				+b.LI.f-menu-item
+					+e.A.link(href="#") Каталог товарів
+				+b.LI.f-menu-item
+					+e.A.link(href="#") Дитяча кімната
+				+b.LI.f-menu-item
+					+e.A.link(href="#") Новорічний декор
+				+b.LI.f-menu-item
+					+e.A.link(href="#") Подарункова упаковка
+				+b.LI.f-menu-item_heart-footer
+					+e.A.link(href="#") Блог і
+				+b.LI.f-menu-item
+					+e.A.link(href="#") Оплата і доставка
+			+b.f-contacts
+				+b.f-phones
+					+e.A.item(href="tel:8096888777666") <span class="violet">(8096) </span>888-777-666
+					+e.A.item(href="tel:8096888777666") <span class="violet">(8096) </span>888-777-666
+				+b.f-social
+					+e.title Розповісти про нас
+					+b.social-list
+						+b.soc-item
+							+e.A.link(href="#")
+								+e.IMG.img(src="../../static/img/general/facebook.png", alt="Facebook")
+						+b.soc-item
+							+e.A.link(href="#")
+								+e.IMG.img(src="../../static/img/general/instagram.png", alt="Instagram")
+						+b.soc-item
+							+e.A.link(href="#")
+								+e.IMG.img(src="../../static/img/general/tweeter.png", alt="Tweeter")
+	+b.footer-bottom
+		+e.container
+			+e.copyright ©2017 Все права защищены.
