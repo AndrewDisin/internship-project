@@ -2,7 +2,7 @@ $(document).ready(function () {
     svg4everybody({});
 
 
-	$('.main-banner__slider').slick({
+	$('.slider').slick({
 		infinite: true,
 		slidesToShow: 1,
 		slidesToScroll: 1,

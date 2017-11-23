@@ -4,7 +4,7 @@
 	max-width 1920px
 	margin 0 auto
 	
-.main-banner__slider
+.slider
 	position relative
 	width 100%
 	.slick-dots
@@ -34,13 +34,14 @@
 				background-color #fff
 				border 5px solid #fff
 				
-.main-banner__slider--item
+.slider-item
 	width 100%
 	display flex
 	justify-content center
 	align-items center
-	img
-		width 100%
+	
+.slider-item__img
+	width 100%
 	
 .main-banner__form
 	position absolute
@@ -50,14 +51,15 @@
 	background-image url('../img/general/form-bg.png')
 	background-size 100% 100%
 	min-width 200px
-	form
-		display flex
-		flex-direction column
-		width 100%
-		max-width 200px
-		padding 50px 20px 45px 20px
+
+.form
+	display flex
+	flex-direction column
+	width 100%
+	max-width 200px
+	padding 50px 20px 45px 20px
 	
-.form-title
+.form__title
 	font-size 15px
 	font-family CenturyGothicBold
 	color #fff
@@ -65,14 +67,14 @@
 	width 100%
 	margin-bottom 10px
 	
-.form-subtitle
+.form__subtitle
 	font-size 11px
 	font-family CenturyGothicRegular, sans-serif
 	color #fff
 	text-align center
 	margin-bottom 10px
 	
-.input-name
+.form__input-name
 	width 100%
 	border-radius 5px
 	background-color #fff
@@ -83,7 +85,7 @@
 	font-size 11px
 	font-family CenturyGothicRegular, sans-serif
 	
-.input-phone
+.form__input-phone
 	width 100%
 	border-radius 5px
 	background-color #fff
@@ -94,7 +96,7 @@
 	font-size 11px
 	font-family CenturyGothicRegular, sans-serif
 	
-.input-submit
+.form__input-submit
 	cursor pointer
 	width 100%
 	border-radius 20px
