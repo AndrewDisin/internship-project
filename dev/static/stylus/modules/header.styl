@@ -10,12 +10,22 @@
 	margin 0 auto
 
 .main-header__container
+	position relative
 	width 100%
 	max-width 1200px
 	padding 0 15px
 	margin 0 auto
 	display flex
 	flex-direction column
+	&:before
+		content ''
+		position absolute
+		top 0px
+		left 85%
+		width 198px
+		height 170px
+		background-image url('../img/general/fairy.png')
+		z-index -1	
 
 .main-header__top
 	display flex
@@ -40,7 +50,7 @@
 		transform translateY(-50%)
 		width 24px
 		height 24px
-		background-image url('../img/general/calendar.png')
+		background url('../img/general/heaedr-sprit.png') -10px -10px
 
 .work-time__time
 	font-size 18px
@@ -48,7 +58,7 @@
 	color #7091f0
 	margin-bottom 5px
 	
-.work-time__descr
+.work-time__description
 	font-size 12px
 	font-family CenturyGothicBold, sans-serif
 	color #7091f0
@@ -72,7 +82,7 @@
 		transform translateY(-50%)
 		width 24px
 		height 24px
-		background-image url('../img/general/phone.png')
+		background url('../img/general/heaedr-sprit.png') -54px -10px
 		
 .phones__phone
 	-moz-transition all 0.2s ease-in-out
@@ -91,7 +101,7 @@
 .orange
 	color #ff6c00
 		
-.call-btn
+.call-button
 	width 100%
 	max-width 165px
 	padding 8px
@@ -110,15 +120,6 @@
 
 .search
 	position relative
-	&:before
-		content ''
-		position absolute
-		right 15px
-		top 50%
-		transform translateY(-50%)
-		width 18px
-		height 18px
-		background-image url('../img/general/search.png')
 	
 .search__input
 	background-color transparent
@@ -129,6 +130,20 @@
 	font-family CenturyGothicBold, sans-serif
 	color #70caf0
 	text-align right
+	
+.search__submit
+	position absolute
+	right 15px
+	top 50%
+	-webkit-transform translateY(-50%)
+	-ms-transform translateY(-50%)
+	transform translateY(-50%)
+	width 18px
+	height 18px
+	background-color transparent
+	border none
+	cursor pointer
+	background url(../img/general/heaedr-sprit.png) -98px -10px
 	
 .login
 	position relative
@@ -147,7 +162,7 @@
 		transform translateY(-50%)
 		width 24px
 		height 20px
-		background-image url('../img/general/login.png')
+		background url('../img/general/heaedr-sprit.png') -54px -54px
 		
 .login__link
 	font-size 18px
@@ -183,7 +198,7 @@
 		transform translateY(-60%)
 		width 24px
 		height 21px
-		background-image url('../img/general/basket.png')
+		background url('../img/general/heaedr-sprit.png') -10px -54px
 	
 .basket__link
 	font-size 18px
@@ -211,12 +226,3 @@
 	font-family CenturyGothicBold, sans-serif
 	background-color #fff
 	margin-right 75px
-	&:before
-		content ''
-		position absolute
-		top -85px
-		left 15px
-		width 198px
-		height 170px
-		background-image url('../img/general/fairy.png')
-		z-index -1

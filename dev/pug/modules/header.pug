@@ -3,14 +3,15 @@
 		+e.top
 			+b.work-time
 				+e.time Пн-Сб з 9:00 до 20:00
-				+e.descr Замовлення онлайн цілодобово
+				+e.description Замовлення онлайн цілодобово
 			+b.contacts
 				+b.phones
 					+e.A.phone(href="tel:809688877766") <span class='orange'>(8096)</span> 888-777-66
 					+e.A.phone(href="tel:809688877766") <span class='orange'>(8096)</span> 888-777-66
-				+b.A.call-btn(href="#") зворотній зв'язок
-			+b.search
+				+b.A.call-button(href="#") зворотній зв'язок
+			+b.FORM.search
 				+e.INPUT.input(type="search")
+				+e.INPUT.submit(type="submit" name="search-submit" id="search-submit" value="")
 			+b.login
 				+e.A.link(href="#") Увійти
 		+e.bottom

@@ -10,7 +10,7 @@ $(document).ready(function () {
 		dots: true,
 	});
 
-  $('.icon').click(function(){
+  $('.m-icon').click(function(){
     $('.mobile-menu__list').toggleClass('active-popup')
   });
 
