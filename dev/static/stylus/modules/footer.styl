@@ -1,16 +1,16 @@
 .main-footer
 	width 100%
-	max-width 1920px
+	max-width max-width-page
 	margin 0 auto
 	
 .footer-top
 	width 100%
-	background-color #70caf0
+	background-color lightBlue
 	padding 20px 0
 	
 .footer-top__container
 	width 100%
-	max-width 1200px
+	max-width max-width-container
 	padding 0 15px
 	margin 0 auto
 	display flex
@@ -25,9 +25,9 @@
 
 .f-logo
 	position relative
-	font-size 65px
-	font-family OldComedy, sans-serif
-	color #fff
+	font-size bigLogoText
+	font-family logoFont
+	color white
 	margin-bottom 45px
 	&:before
 		content ''
@@ -40,15 +40,15 @@
 		background-image url('../../static/img/general/footer-stars.png')
 
 .subscription__title
-	font-size 18px
-	font-family CenturyGothicBold, sans-serif
-	color #7091f0
+	font-size largeText
+	font-family mainTextFont
+	color blue
 	margin-bottom 30px
 
 .subscription__descr
-	font-size 11px
-	font-family CenturyGothicBold, sans-serif
-	color #525151
+	font-size tinyText
+	font-family mainTextFont
+	color gray
 	line-height 2
 	margin-bottom 15px
 	max-width 240px
@@ -60,23 +60,23 @@
 .f-form__input-email
 	width 100%
 	max-width 199px
-	background-color #fff
+	background-color white
 	border none
 	padding 15px
-	font-size 11px
-	font-family Verdana, sans-serif
-	color #979696
+	font-size tinyText
+	font-family inputFont
+	color lightGray
 	
 .f-form__input-sub
 	cursor pointer
 	width 100%
 	max-width 132px
 	border none
-	background-color #ff903f
+	background-color lightOrange
 	padding 15px
-	font-size 11px
-	font-family Verdana, sans-serif
-	color #fff
+	font-size tinyText
+	font-family inputFont
+	color white
 
 .f-menu
 	align-self flex-start
@@ -94,7 +94,7 @@
 	transition all 0.2s ease-in-out
 	&:hover
 		a
-			color #7091f0
+			color blue
 	&:before
 		-moz-transition all 0.2s ease-in-out
 		-o-transition all 0.2s ease-in-out
@@ -109,15 +109,15 @@
 	display block
 	width 100%
 	padding 10px 10px 10px 0
-	font-size 16px
-	font-family CenturyGothicBold, sans-serif
-	color #fff
+	font-size mediumText
+	font-family mainTextFont
+	color white
 		
 .f-menu-item_heart-footer:hover
 	&:before
 		background-image url('../../static/img/general/b-heart-footer-blue.png')
 		a
-			color #7091f0
+			color blue
 
 .f-contacts
 	display flex
@@ -141,9 +141,9 @@
 		background-image url('../../static/img/general/footer-phone.png')
 
 .f-phones__item
-	font-size 22px
-	font-family CenturyGothicBold, sans-serif
-	color #fff
+	font-size bigText
+	font-family mainTextFont
+	color white
 	margin-bottom 10px
 	-moz-transition all 0.2s ease-in-out
 	-o-transition all 0.2s ease-in-out
@@ -153,14 +153,14 @@
 		opacity 0.5
 		
 .violet
-	font-size 18px
-	color #7091f0
+	font-size largeText
+	color blue
 	background-color transparent
 
 .f-social__title
-	font-size 18px
-	font-family RobotoBold, sans-serif
-	color #7091f0
+	font-size largeText
+	font-family titleFont
+	color blue
 	margin-bottom 10px
 	text-align center
 	
@@ -180,7 +180,7 @@
 		opacity 0.5
 
 .icon-facebook, .icon-instagram, .icon-twitter
-	fill #fff
+	fill white
 	width 25px
 	height 25px
 	padding 0
@@ -202,7 +202,7 @@
 .footer-bottom
 	width 100%
 	padding 15px 0
-	background-color #7091f0
+	background-color blue
 
 .footer-bottom__container
 	width 100%
@@ -213,9 +213,9 @@
 	justify-content center
 
 .footer-bottom__copyright
-	font-size 12px
+	font-size tinyText
 	font-family RobotoBold, sans-serif
-	color #fff
+	color white
 	
 .f-menu-item_heart-footer
 	a
@@ -236,10 +236,10 @@
 
 .f-menu .f-menu-item_active-page
 	a
-		color #7091f0
+		color blue
 			
 .f-menu .f-menu-item_heart-footer .f-menu-item_active-page
 	&:before
 		background-image url('../../static/img/general/b-heart-footer-blue.png')
 	a
-		color #7091f0
+		color blue

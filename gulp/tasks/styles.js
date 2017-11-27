@@ -5,7 +5,7 @@ module.exports = function () {
                 'include css': true
             }))
             .pipe($.gp.autoprefixer({
-                browsers: ['last 3 version']
+                browsers: ['last 10 version']
             }))
             .pipe($.gp.csscomb())
             .pipe($.gp.csso())
@@ -26,7 +26,7 @@ module.exports = function () {
             }))
             .pipe($.gp.sourcemaps.write())
             .pipe($.gp.autoprefixer({
-                browsers: ['last 3 version']
+                browsers: ['last 10 version']
             }))
             .pipe($.gulp.dest('./build/static/css/'))
             .pipe($.browserSync.reload({

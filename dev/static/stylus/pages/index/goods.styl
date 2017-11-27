@@ -2,7 +2,7 @@
 	position relative
 	padding 45px 0 5px 0
 	width 100%
-	max-width 1920px
+	max-width max-width-page
 	margin 0 auto
 	z-index 2
 	overflow hidden
@@ -27,7 +27,7 @@
 		
 .goods__container
 	width 100%
-	max-width 1200px
+	max-width max-width-container
 	padding 0 15px
 	margin 0 auto
 	display flex
@@ -38,9 +38,9 @@
 		
 .goods__title
 	position relative
-	font-size 30px
-	font-family CenturyGothicBold, san-setif
-	color #de6c9d
+	font-size hugeText
+	font-family mainTextFont
+	color purple
 	margin-bottom 40px
 	&:before
 		content ''
@@ -85,15 +85,15 @@
 				display flex
 				justify-content center
 				align-items center
-				color #fff
+				color white
 				font-size 18px
-				font-family CenturyGothicBold
+				font-family mainTextFont
 				top 0px
 				left 0px
 				width 100%
 				height 100%
 				background-color rgba(35,34,32,0.5)
-				border 2px solid #7091f0
+				border 2px solid blue
 				-webkit-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
 				-moz-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
 				box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
@@ -106,10 +106,10 @@
 	margin-bottom 20px
 	
 .goods-item__link
-	font-size 14px
-	font-family CenturyGothicBold, sans-serif
-	color #7091f0
-	border-bottom 2px solid #7091f0
+	font-size smallText
+	font-family mainTextFont
+	color blue
+	border-bottom 2px solid blue
 	text-align center
 	
 
