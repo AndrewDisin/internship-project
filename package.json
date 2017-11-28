@@ -33,5 +33,6 @@
   "dependencies": {
     "normalize.css": "^7.0.0",
     "svg4everybody": "^2.1.8"
-  }
+  },
+  "optionalDependencies": {}
 }
