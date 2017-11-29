@@ -1,36 +1,9 @@
 +b.SECTION.goods
 	+e.container
-		+e.title Товари в наявності
+		+e.H2.title Товари в наявності
 		+b.goods-list
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item1.png", alt="Item 1")
-				+e.A.link(href="#") Органайзер в машину
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item2.png", alt="Item 2")
-				+e.A.link(href="#") Аксесуари для Baby Born
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item3.png", alt="Item 3")
-				+e.A.link(href="#") Сумочки/косметички/рюкзачки
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item4.png", alt="Item 4")
-				+e.A.link(href="#") Сумка-будиночок
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item5.png", alt="Item 5")
-				+e.A.link(href="#") Прикраси для волосся
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item6.png", alt="Item 6")
-				+e.A.link(href="#") Аксесуари для Barbie
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item7.png", alt="Item 7")
-				+e.A.link(href="#") Аксесуари для Chi Chi Love
-			+b.goods-item
-				+b.A.item-link-img(href="#")
-					+e.IMG.img(src="../../../static/img/content/goods/item8.png", alt="Item 8")
-				+e.A.link(href="#") Новорічний декор
+			each object in content.goods
+				+b.A.goods-item(href=object['link'])
+					+b.item-img(data-text=object['dataText'])
+						+e.IMG.img(src=object['srcImg'], alt=object['alt'])
+					+e.title= object['title']

@@ -3,9 +3,9 @@
 		+b.FORM.form(id="main-banner-form" name="main-banner-form")
 			+e.title Швидке замовлення
 			+e.subtitle Зробіть замовлення зараз та отримайте безкоштовну доставку*
-			+e.INPUT.input-name(type="text" name="name" placeholder="Ім'я")
-			+e.INPUT.input-phone(type="text" name="phone" placeholder="Телефон")
-			+e.INPUT.input-submit(type="submit" name="ord-btn" id='ord-btn' value='залишити заявку')
+			+e.INPUT.input-name(type="text" name="name" placeholder="Ім'я" required)
+			+e.INPUT.input-phone(type="tel" name="phone" placeholder="Телефон" required)
+			+e.BUTTON.input-button(name="ord-btn" id='ord-btn' value='залишити заявку') залишити заявку
 	+b.slider
 		+b.slider-item
 			+e.IMG.img(src="../../../static/img/content/main-banner/slide1.png", alt="Slide 1")

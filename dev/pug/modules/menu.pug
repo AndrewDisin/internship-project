@@ -4,33 +4,22 @@
 			+b.m-icon
 				+e.IMG.img(src="../../static/img/general/menu (1).svg", alt="Mobile menu")
 			+e.UL.list
-				+b.LI.m-list-item
-					+e.A.link(href="index.html") Головна
-				+b.LI.m-list-item
-					+e.A.link(href="catalog.html") Каталог товарів
-				+b.LI.m-list-item
-					+e.A.link(href="room.html") Дитяча кімната
-				+b.LI.m-list-item
-					+e.A.link(href="newyear.html") Новорічний декор
-				+b.LI.m-list-item
-					+e.A.link(href="packaging.html") Подарункова упаковка
-				+b.LI.m-list-item
-					+e.A.link(href="blog.html") Блог і &#9825
-				+b.LI.m-list-item
-					+e.A.link(href="delivery.html") Оплата і доставка
+				each object in nav.navPages
+					+b.LI.m-list-item
+						+e.A.link(href= object['link'])= object['title']
 		+b.NAV.nav
-			+e.UL.nav-list
-				+b.LI.list-item_active-page
-					+e.A.link_blue(href="index.html") Головна
-				+b.LI.list-item
-					+e.A.link_broun(href="catalog.html") Каталог товарів
-				+b.LI.list-item
-					+e.A.link_pink(href="room.html") Дитяча кімната
-				+b.LI.list-item
-					+e.A.link_red(href="newyear.html") Новорічний декор
-				+b.LI.list-item
-					+e.A.link_yellow(href="packaging.html") Подарункова упаковка
-				+b.LI.list-item_heart
-					+e.A.link_violet(href="blog.html") Блог і 
-				+b.LI.list-item
-					+e.A.link_lilac(href="delivery.html") Оплата і доставка
+			+e.UL.list
+				+e.LI.list-item_active-page
+					+e.A.list-item-link_blue(href="index.html") Головна
+				+e.LI.list-item
+					+e.A.list-item-link_broun(href="catalog.html") Каталог товарів
+				+e.LI.list-item
+					+e.A.list-item-link_pink(href="room.html") Дитяча кімната
+				+e.LI.list-item
+					+e.A.list-item-link_red(href="newyear.html") Новорічний декор
+				+e.LI.list-item
+					+e.A.list-item-link_yellow(href="packaging.html") Подарункова упаковка
+				+e.LI.list-item_heart
+					+e.A.list-item-link_violet(href="blog.html") Блог і 
+				+e.LI.list-item
+					+e.A.list-item-link_lilac(href="delivery.html") Оплата і доставка

@@ -2,46 +2,27 @@
 	+b.footer-top
 		+e.container
 			+b.subscription
-				+b.A.f-logo(href="#") 4My Doll
+				+b.A.footer-logo(href="#") 4My Doll
 				+e.title Підписка
-				+e.descr Вас повідомлять першими про різні акції і спеціальні пропозиції.
-				+b.FORM.f-form(id='subscription-form')
+				+e.description Вас повідомлять першими про різні акції і спеціальні пропозиції.
+				+b.FORM.footer-form(id='subscription-form')
 					+e.INPUT.input-email(type="email" name="email" id="email" placeholder="Ваш email")
-					+e.INPUT.input-sub(type="submit" name="subscription-submit" id="subscription-submit" value="Підписатися")
-			+b.UL.f-menu
-				+b.LI.f-menu-item_active-page
-					+e.A.link(href="#") Головна
-				+b.LI.f-menu-item
-					+e.A.link(href="#") Каталог товарів
-				+b.LI.f-menu-item
-					+e.A.link(href="#") Дитяча кімната
-				+b.LI.f-menu-item
-					+e.A.link(href="#") Новорічний декор
-				+b.LI.f-menu-item
-					+e.A.link(href="#") Подарункова упаковка
-				+b.LI.f-menu-item_heart-footer
-					+e.A.link(href="#") Блог і
-				+b.LI.f-menu-item
-					+e.A.link(href="#") Оплата і доставка
-			+b.f-contacts
-				+b.f-phones
+					+e.BUTTON.input-button(name="subscription-submit" id="subscription-submit" value="Підписатися") Підписатися
+			+b.UL.footer-menu
+				each object in nav.navPages
+					+b.LI.footer-menu-item
+						+e.A.link(href= object['link'])= object['title']
+			+b.footer-contacts
+				+b.footer-phones
 					+e.A.item(href="tel:8096888777666") <span class="violet">(8096) </span>888-777-666
 					+e.A.item(href="tel:8096888777666") <span class="violet">(8096) </span>888-777-666
-				+b.f-social
+				+b.footer-social
 					+e.title Розповісти про нас
 					+b.social-list
-						+b.soc-item
-							+e.A.link(href="#")
-								//- +e.IMG.img(src="../../static/img/general/facebook.png", alt="Facebook")
-								+icon('facebook')
-						+b.soc-item
-							+e.A.link(href="#")
-								//- +e.IMG.img(src="../../static/img/general/instagram.png", alt="Instagram")
-								+icon('instagram')
-						+b.soc-item
-							+e.A.link(href="#")
-								//- +e.IMG.img(src="../../static/img/general/tweeter.png", alt="Tweeter")
-								+icon('twitter')
+						each object in content.socialList
+							+b.social-item
+								+e.A.link(href= object['link'])
+									+icon(object['icon'])
 	+b.footer-bottom
 		+e.container
 			+e.copyright ©2017 Все права защищены.

@@ -20,15 +20,15 @@
 .nav
 	width 100%
 	
-.nav__nav-list
+.nav__list
 	display flex
 
-.list-item_active-page
+.nav__list-item_active-page
 	a
 		&:before
 				display block
 	
-.list-item
+.nav__list-item
 	-moz-transition all 0.2s ease-in-out
 	-o-transition all 0.2s ease-in-out
 	-webkit-transition all 0.2s ease-in-out
@@ -39,7 +39,7 @@
 				display block
 	flex-grow 1
 	
-.list-item__link
+.nav__list-item-link
 	position relative
 	display block
 	padding 15px 10px
@@ -66,37 +66,37 @@
 		-webkit-clip-path polygon(100% 0, 100% 100%, 50% 0, 0 100%, 0 0)
 		clip-path polygon(100% 0, 100% 100%, 50% 0, 0 100%, 0 0)
 
-.list-item__link_blue
+.nav__list-item-link_blue
 	background-color lightBlue
 	&:before
 		background-color lightBlue
 
-.list-item__link_broun
+.nav__list-item-link_broun
 	background-color broun
 	&:before
 		background-color broun
 	
-.list-item__link_pink
+.nav__list-item-link_pink
 	background-color lightPink
 	&:before
 		background-color lightPink
 	
-.list-item__link_red
+.nav__list-item-link_red
 	background-color red
 	&:before
 		background-color red
 	
-.list-item__link_yellow
+.nav__list-item-link_yellow
 	background-color yellow
 	&:before
 		background-color yellow
 	
-.list-item__link_violet
+.nav__list-item-link_violet
 	background-color violet
 	&:before
 		background-color violet
 	
-.list-item__link_lilac
+.nav__list-item-link_lilac
 	background-color lilac
 	&:before
 		background-color lilac
@@ -154,10 +154,10 @@
 	color orange
 	border-color orange
 
-.list-item_heart a
+.nav__list-item_heart a
 	padding-right 30px
 	
-.list-item_heart
+.nav__list-item_heart
 	a
 		padding-right 100px
 	position relative
@@ -169,6 +169,6 @@
 		transform translateY(-50%)
 		width 18px
 		height 17px
-		background-image url('../../../static/img/general/b-heart.png')
+		background-image url('../img/general/b-heart.png')
 		z-index 1
 	

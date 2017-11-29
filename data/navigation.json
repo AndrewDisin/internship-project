@@ -1,7 +1,32 @@
 {
-  "navPages": {
-    "Главная страница" : "main.html",
-    "О компании" : "about.html",
-    "Каталог" : "catalog.html"
+  "navPages" : {
+  	"main": {
+      "link" : "index.html",
+      "title" : "Головна"
+    },
+  	"catalog": {
+      "link" : "catalog.html",
+      "title" : "Каталог товарів"
+    },
+  	"room": {
+      "link" : "room.html",
+      "title" : "Дитяча кімната"
+    },
+  	"newYear": {
+      "link" : "newYear.html",
+      "title" : "Новорічний декор"
+    },
+  	"packaging": {
+      "link" : "packaging.html",
+      "title" : "Подарункова упаковка"
+    },
+  	"blog": {
+      "link" : "blog.html",
+      "title" : "Блог і"
+    },
+  	"delivery": {
+      "link" : "delivery.html",
+      "title" : "Оплата і доставка"
+    }
   }
 }

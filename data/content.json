@@ -1,6 +1,74 @@
 {
-  "content": {
-    " " : " ",
-    " " : " "
+  "goods" : {
+  	"organizer": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item1.png",
+      "title" : "Органайзер в машину",
+      "alt": "Item 1"
+    },
+  	"babyBorn": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item2.png",
+      "title" : "Аксесуари для Baby Born",
+      "alt": "Item 2"
+    },
+  	"bags": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item3.png",
+      "title" : "Сумочки/косметички/рюкзачки",
+      "alt": "Item 3"
+    },
+  	"bagHouse": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item4.png",
+      "title" : "Сумка-будиночок",
+      "alt": "Item 4"
+    },
+  	"hair": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item5.png",
+      "title" : "Прикраси для волосся",
+      "alt": "Item 5"
+    },
+  	"barbie": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item6.png",
+      "title" : "Аксесуари для Barbie",
+      "alt": "Item 6"
+    },
+  	"chiChiLove": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item7.png",
+      "title" : "Аксесуари для Chi Chi Love",
+      "alt": "Item 7"
+    },
+  	"newYear": {
+      "link" : "#",
+      "dataText" : "Перейти в каталог",
+      "srcImg" : "/static/img/content/goods/item8.png",
+      "title" : "Новорічний декор",
+      "alt": "Item 8"
+    }
+  },
+  "socialList" : {
+    "facebook": {
+      "link" : "#",
+      "icon" : "facebook"
+    },
+    "instagram": {
+      "link" : "#",
+      "icon" : "instagram"
+    },
+    "twitter": {
+      "link" : "#",
+      "icon" : "twitter"
+    }
   }
 }
