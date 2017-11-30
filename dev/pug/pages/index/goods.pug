@@ -1,9 +1,10 @@
 +b.SECTION.goods
-	+e.container
+	.container
 		+e.H2.title Товари в наявності
 		+b.goods-list
 			each object in content.goods
-				+b.A.goods-item(href=object['link'])
-					+b.item-img(data-text=object['dataText'])
-						+e.IMG.img(src=object['srcImg'], alt=object['alt'])
-					+e.title= object['title']
+				+b.ARTICLE.goods-item
+					+e.A.link(href=object['link'])
+						+b.FIGURE.item-img(data-text=object['dataText'])
+							+e.IMG.img(src=object['srcImg'], alt=object['alt'])
+						+e.title= object['title']

@@ -45,6 +45,9 @@ input,
 select,
 button
 	outline none
+	
+figure
+	margin 0
 
 
 *, *:before, *:after
@@ -53,9 +56,12 @@ button
 
 .container
 	width 100%
-	max-width 1200px
+	max-width max-width-container
 	padding 0 15px
 	margin 0 auto
+	display flex
+	flex-direction column
+	text-align center
 	
 .back-call-popup, .login-popup
 	position absolute

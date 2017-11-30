@@ -2,7 +2,7 @@
 	position relative
 	padding 45px 0 5px 0
 	width 100%
-	max-width max-width-page
+	// max-width max-width-page
 	margin 0 auto
 	z-index 2
 	overflow hidden
@@ -23,23 +23,13 @@
 		width 357px
 		height 387px
 		background-image url('../img/general/goods-stars.png')
-		z-index -1
-		
-.goods__container
-	width 100%
-	max-width max-width-container
-	padding 0 15px
-	margin 0 auto
-	display flex
-	flex-direction column
-	align-items center
-	z-index 2
-	padding 0
+		z-index -1	
+	&.container
+		align-items center
+		display block
 		
 .goods__title
 	position relative
-	font-size hugeText
-	font-family mainTextFont
 	color purple
 	margin-bottom 40px
 	&:before
@@ -69,12 +59,17 @@
 	justify-content center
 	
 .goods-item
+	margin-right 15px
+	margin-bottom 40px
+	padding-top 15px
+	padding-left 15px
+	max-width 230px
+
+.goods-item__link
 	position relative
 	display flex
 	flex-direction column
 	align-items center
-	margin 15px
-	margin-bottom 40px
 	max-width 230px
 	&:hover
 		.item-img
@@ -97,6 +92,7 @@
 				-webkit-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
 				-moz-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
 				box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
+
 
 .item-img__img
 	width 100%
