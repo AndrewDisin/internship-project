@@ -1,36 +1,14 @@
-section.content.catalog
++b.SECTION.content_catalog
 	.container
-		ul.content__bread-crumbs
-			li.content__bread-crumbs--item
-				a(href="#") Головна
-			li.content__bread-crumbs--item.broun-text
-				a Каталог товарів
-		.catalog__list
-			.catalog__list__item
-				a(href="#").catalog__list__item--img
-					img(src="../../../static/img/content/catalog/item1.png", alt="Item 1")
-				a(href="#").catalog__list__item--link Аксесуари для Baby Born
-			.catalog__list__item
-				a(href="#").catalog__list__item--img
-					img(src="../../../static/img/content/catalog/item2.png", alt="Item 2")
-				a(href="#").catalog__list__item--link Аксесуари для Barbie
-			.catalog__list__item
-				a(href="#").catalog__list__item--img
-					img(src="../../../static/img/content/catalog/item3.png", alt="Item 3")
-				a(href="#").catalog__list__item--link Аксесуари для Chi Chi Love
-			.catalog__list__item
-				a(href="#").catalog__list__item--img
-					img(src="../../../static/img/content/catalog/item4.png", alt="Item 1")
-				a(href="#").catalog__list__item--link Сумочки/косметички/рюкзачки
-			.catalog__list__item
-				a(href="#").catalog__list__item--img
-					img(src="../../../static/img/content/catalog/item5.png", alt="Item 2")
-				a(href="#").catalog__list__item--link Органайзери
-			.catalog__list__item
-				a(href="#").catalog__list__item--img
-					img(src="../../../static/img/content/catalog/item6.png", alt="Item 3")
-				a(href="#").catalog__list__item--link Сумка-будиночок
-			.catalog__list__item
-				a(href="#").catalog__list__item--img
-					img(src="../../../static/img/content/catalog/item7.png", alt="Item 3")
-				a(href="#").catalog__list__item--link Прикраси для волосся
+		+b.UL.bread-crumbs
+			+e.item
+				+e.A.link(href="#") Головна
+			+e.item
+				+e.A.link_broun-text Каталог товарів
+		+b.goods-list
+			each object in content.goodsCatalog
+				+b.ARTICLE.goods-item
+					+e.A.link(href=object['link'])
+						+b.FIGURE.item-img(data-text=object['dataText'])
+							+e.IMG.img(src=object['srcImg'], alt=object['alt'])
+						+e.title= object['title']

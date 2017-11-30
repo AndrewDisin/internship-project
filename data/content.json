@@ -57,6 +57,120 @@
       "alt": "Item 8"
     }
   },
+  "goodsCatalog" : {
+    "babyBorn": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/catalog/item1.png",
+      "title" : "Аксесуари для Baby Born",
+      "alt": "Item 1"
+    },
+    "barbie": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/catalog/item2.png",
+      "title" : "Аксесуари для Barbie",
+      "alt": "Item 2"
+    },
+    "chiChiLove": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/catalog/item3.png",
+      "title" : "Аксесуари для Chi Chi Love",
+      "alt": "Item 3"
+    },
+    "bags": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/catalog/item4.png",
+      "title" : "Сумочки/косметички/рюкзачки",
+      "alt": "Item 4"
+    },
+    "organizer": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/catalog/item5.png",
+      "title" : "Органайзери",
+      "alt": "Item 5"
+    },
+    "bagHouse": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/catalog/item6.png",
+      "title" : "Сумка-будиночок",
+      "alt": "Item 6"
+    },
+    "hair": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/catalog/item7.png",
+      "title" : "Прикраси для волосся",
+      "alt": "Item 7"
+    }
+  },
+  "newYearProductList" : {
+    "spruce": {
+      "srcImg" : "/static/img/general/newyear/item1.png",
+      "alt": "Item 1",
+      "title" : "Колекція ялинкових прикрас",
+      "description": "Вишивка хрестиком, декоративними швами",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "bulbs": {
+      "srcImg": "/static/img/general/newyear/item2.png",
+      "alt": "Item 2",
+      "title": "Іграшки із лампочок",
+      "description" : "Плетені гачком",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "ekin": {
+      "srcImg": "/static/img/general/newyear/item3.png",
+      "alt": "Item 3",
+      "title": "Ялинки",
+      "description" : "Екібани",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "pots": {
+      "srcImg": "/static/img/general/newyear/item4.png",
+      "alt": "Item 4",
+      "title": "Іграшки ялинкові",
+      "description" : "В стилі декупаж",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "stockings": {
+      "srcImg": "/static/img/general/newyear/item5.png",
+      "alt": "Item 5",
+      "title": "Різдвяні панчохи",
+      "description" : "В стилі декупаж",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    }
+  },
+  "goodsRoom" : {
+    "babyBorn": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/room/item1.png",
+      "title" : "Постільна білизна",
+      "alt": "Item 1"
+    },
+    "barbie": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/room/item2.png",
+      "title" : "Декор / Покривала в стилі печворк",
+      "alt": "Item 2"
+    }
+  },
   "socialList" : {
     "facebook": {
       "link" : "#",

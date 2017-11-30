@@ -1,77 +1,22 @@
-section.content.newyear
++b.SECTION.content_newyear
 	.container
-		ul.content__bread-crumbs
-			li.content__bread-crumbs--item
-				a(href="#") Головна
-			li.content__bread-crumbs--item.red-text
-				a Новорічний декор
-		.newyear__list
-			.newyear__list__item
-				a(href="#").newyear__list__item--img
-					img(src="../../../static/img/general/newyear/item1.png", alt="Item 1")
-				a(href="#").newyear__list__item--link Колекція ялинкових прикрас
-				.newyear__list__item--descr Вишивка хрестиком, декоративними швами
-				.newyear__list__item__price
-					.newyear__list__item__price--cost 560
-					.newyear__list__item__price--currency грн.
-					.newyear__list__item__price--serch
-						img(src="../../../static/img/general/newyear/search.png", alt="Search")
-					.newyear__list__item__price--like
-						img(src="../../../static/img/general/newyear/like.png", alt="Like")
-				.newyear__list__item--order в кошик
-			.newyear__list__item
-				a(href="#").newyear__list__item--img
-					img(src="../../../static/img/general/newyear/item2.png", alt="Item 2")
-				a(href="#").newyear__list__item--link Іграшки із лампочок
-				.newyear__list__item--descr Плетені гачком
-				.newyear__list__item__price
-					.newyear__list__item__price--cost 560
-					.newyear__list__item__price--currency грн.
-					.newyear__list__item__price--serch
-						img(src="../../../static/img/general/newyear/search.png", alt="Search")
-					.newyear__list__item__price--like
-						img(src="../../../static/img/general/newyear/like.png", alt="Like")
-				.newyear__list__item--order в кошик
-			
-			.newyear__list__item
-				a(href="#").newyear__list__item--img
-					img(src="../../../static/img/general/newyear/item3.png", alt="Item 3")
-				a(href="#").newyear__list__item--link Ялинки
-				.newyear__list__item--descr Екібани
-				.newyear__list__item__price
-					.newyear__list__item__price--cost 560
-					.newyear__list__item__price--currency грн.
-					.newyear__list__item__price--serch
-						img(src="../../../static/img/general/newyear/search.png", alt="Search")
-					.newyear__list__item__price--like
-						img(src="../../../static/img/general/newyear/like.png", alt="Like")
-				.newyear__list__item--order в кошик
-			
-			.newyear__list__item
-				a(href="#").newyear__list__item--img
-					img(src="../../../static/img/general/newyear/item4.png", alt="Item 4")
-				a(href="#").newyear__list__item--link Іграшки ялинкові
-				.newyear__list__item--descr В стилі декупаж
-				.newyear__list__item__price
-					.newyear__list__item__price--cost 560
-					.newyear__list__item__price--currency грн.
-					.newyear__list__item__price--serch
-						img(src="../../../static/img/general/newyear/search.png", alt="Search")
-					.newyear__list__item__price--like
-						img(src="../../../static/img/general/newyear/like.png", alt="Like")
-				.newyear__list__item--order в кошик
-			
-			.newyear__list__item
-				a(href="#").newyear__list__item--img
-					img(src="../../../static/img/general/newyear/item5.png", alt="Item 5")
-				a(href="#").newyear__list__item--link Різдвяні панчохи
-				.newyear__list__item--descr Панчохи в стилі печворк
-				.newyear__list__item__price
-					.newyear__list__item__price--cost 560
-					.newyear__list__item__price--currency грн.
-					.newyear__list__item__price--serch
-						img(src="../../../static/img/general/newyear/search.png", alt="Search")
-					.newyear__list__item__price--like
-						img(src="../../../static/img/general/newyear/like.png", alt="Like")
-				.newyear__list__item--order в кошик
-			
+		+b.UL.bread-crumbs
+			+e.item
+				+e.A.link(href="#") Головна
+			+e.item
+				+e.A.link_red-text Новорічний декор
+		+b.product-list
+			each object in content.newYearProductList
+				+b.ARTICLE.product-item
+					+e.img
+						+e.IMG.picture(src=object['srcImg'], alt= object['alt'])
+					+e.title= object['title']
+					+e.description= object['description']
+					+e.price
+						+e.cost= object['cost']
+						+e.currency= object['currency']
+						+e.serch
+							+e.IMG.search-icon(src="../../../static/img/general/newyear/search.png", alt="Search")
+						+e.like
+							+e.IMG.like-icon(src="../../../static/img/general/newyear/like.png", alt="Like")
+					+e.order= object['order']

@@ -46,22 +46,14 @@ select,
 button
 	outline none
 	
+
 figure
 	margin 0
 
 
 *, *:before, *:after
 	box-sizing border-box
-
-
-.container
-	width 100%
-	max-width max-width-container
-	padding 0 15px
-	margin 0 auto
-	display flex
-	flex-direction column
-	text-align center
+	
 	
 .back-call-popup, .login-popup
 	position absolute
@@ -79,7 +71,7 @@ figure
 .back-call-popup__container, .login-popup__container
 	position relative
 	padding 55px 50px 65px 55px
-	background-color #fff
+	background-color white
 	-webkit-box-shadow 0px 3px 87px 0px rgba(255,87,154,0.41)
 	-moz-box-shadow 0px 3px 87px 0px rgba(255,87,154,0.41)
 	box-shadow 0px 3px 87px 0px rgba(255,87,154,0.41);
@@ -105,35 +97,35 @@ figure
 	align-items center
 	input
 		width 100%
-		background-color #fff
+		background-color white
 		border-radius 5px
-		border 2px solid #ff6c00
+		border 2px solid orange
 		padding 13px 20px 15px 20px
 		margin-bottom 24px
-		font-size 18px
-		font-size CenturyGothicRegular, sans-serif
-		color #7091f0
+		font-size largeText
+		font-family lightTextFont
+		color blue
 		&:last-child
 			margin-bottom 0
 		&::-webkit-input-placeholder
-			color #7091f0
+			color blue
 		&::-moz-placeholder
-			color #7091f0
+			color blue
 		&:-moz-placeholder
-			color #7091f0
+			color blue
 		&:-ms-input-placeholder
-			color #7091f0
+			color blue
 	.backcall-form--input-submit
 		border none
-		background-color #ff6c00
-		color #fff
+		background-color orange
+		color white
 	
 .backcall-form--title
 	width 100%
 	text-align center
-	font-size 20px
-	font-family CenturyGothicBold, sans-serif
-	color #7091f0
+	font-size largeText
+	font-family mainTextFont
+	color blue
 	margin-bottom 35px
 
 .active-popup
@@ -147,9 +139,9 @@ figure
 
 .login-popup__container__list--item.active-tab
 	border-radius 5px
-	background-color #7091f0
+	background-color blue
 	a
-		color #fff
+		color white
 		
 .login-popup__container__list
 	display flex
@@ -164,9 +156,9 @@ figure
 	a
 		display block
 		padding 10px
-		font-size 20px
-		font-family CenturyGothicBold, sans-serif
-		color #7091f0
+		font-size largeText
+		font-family mainTextFont
+		color blue
 		border-radius 5px
 		
 .login-popup__container__tabs
@@ -186,35 +178,35 @@ figure
 	align-items center
 	input
 		width 100%
-		background-color #fff
+		background-color white
 		border-radius 5px
-		border 2px solid #ff6c00
+		border 2px solid orange
 		padding 13px 20px 15px 20px
 		margin-bottom 24px
-		font-size 18px
-		font-size CenturyGothicRegular, sans-serif
-		color #7091f0
+		font-size largeText
+		font-size lightTextFont
+		color blue
 		&::-webkit-input-placeholder
-			color #7091f0
+			color blue
 		&::-moz-placeholder
-			color #7091f0
+			color blue
 		&:-moz-placeholder
-			color #7091f0
+			color blue
 		&:-ms-input-placeholder
-			color #7091f0
+			color blue
 	.login-form--input-submit, .registr-form--input-submit
 		border none
-		background-color #ff6c00
-		color #fff
+		background-color orange
+		color white
 		margin-bottom 30px
 	.registr-form--input-submit
 		margin-bottom 0
 		margin-top 10px
 		
 	.forget-pass
-		color #7091f0
-		font-size 20px
-		font-family CenturyGothicBold
+		color blue
+		font-size largeText
+		font-family mainTextFont
 		align-self flex-start
 		
 .checkbox
@@ -231,7 +223,7 @@ figure
 		&:checked
 			&~.custom-checkbox
 				&:after
-					background-color #ff6c00
+					background-color orange
 			
 		
 .custom-checkbox
@@ -239,7 +231,7 @@ figure
 	display block
 	width 30px
 	height 30px
-	border 2px solid #ff6c00
+	border 2px solid orange
 	margin-right 10px
 	border-radius 5px
 	&:after
@@ -253,9 +245,9 @@ figure
 		transition all linear .1s
 
 .checkbox-text
-	font-size 12px
-	font-family CenturyGothicBold
-	color #7091f0
+	font-size tinyText
+	font-family mainTextFont
+	color blue
 		
 
 // Общие стили
