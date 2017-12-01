@@ -1,54 +1,57 @@
-section.content.blog
++b.SECTION.content_blog
 	.container
-		ul.content__bread-crumbs
-			li.content__bread-crumbs--item
-				a(href="#") Головна
-			li.content__bread-crumbs--item.violet-text.heart-blog
-				a(href="#") Блог і
-		.blog__greeting
-			.blog__greeting--text Привіт! :) Я дуже рада, що Ви  бажаєте спілкуватися зі мною. Ви багаті ідеями? Хочете чимось поділитися, щось обговорити?  Ласкаво прошу :)   - залюбки будемо вести діалоги!
-			.blog__greeting--photo
-				img(src="../../../static/img/general/blog/photo.png", alt="Photo")
-		.social-contacts
-			a(href="#").social-contacts--item.social-contacts--email Email:  <span class='underline'>amber {at} crazylittleprojects.com</span>
-			a(href="#").social-contacts--item.social-contacts--tweeter Twitter: <span class='underline'>amber {at} crazylittleprojects.com</span>
-			a(href="#").social-contacts--item.social-contacts--facebook Facebook:  <span class='underline'>amber {at} crazylittleprojects.com</span>
-			a(href="#").social-contacts--item.social-contacts--googleplus Google Plus:  <span class='underline'>amber {at} crazylittleprojects.com</span>
-		.blog__post
-			.blog__post--title This post may contain affiliate links.
-			.blog__post__info
-				.blog__post__date 20/02/2017
-				a(href="#").blog__post__coments 63
-			.blog__post__info__content
-				.post-text
-					p A few years ago….My cousin sent me her fun spell book that she made. AND I had to make one right away! They were so fun! I only made one…and my kids have fought over it year after year! I found it hidden under my son’s bed in July. (Original post is here!)
-					p I was at the library and they had a bunch of old books there were getting rid of for a quarter a piece…so I decided it was time for the kids to each make their own!
-					p And we had a BLAST! They were all old enough to do the majority of it by themselves!
-					p This post may contain affiliate links.
-					p A few years ago….My cousin sent me her fun spell book that she made. AND I had to make one right away! They were so fun! I only made one…and my kids have fought over it year after year! I found it hidden under my son’s bed in July. (Original post is here!)
-					p I was at the library and they had a bunch of old books there were getting rid of for a quarter a piece…so I decided it was time for the kids to each make their own!
-					p And we had a BLAST! They were all old enough to do the majority of it by themselves!
-				.post-img
-					img(src="../../../static/img/content/blog/post1.png", alt="Post1")
-				.post-text
-					p A few years ago….My cousin sent me her fun spell book that she made. AND I had to make one right away! They were so fun! I only made one…and my kids have fought over it year after year! I found it hidden under my son’s bed in July. (Original post is here!)
-		.blog__comments
-			.blog__comments--title Коментарі
-			.blog__comments__list
-				.blog__comments__list--item
-					.comment--date 22 березня 2017 року
-					.comment--text Дуже оригінальні подушки. Зі смаком підібрано тканину, під самий інтерєр дитячої. Рада, що звернулась до Наталії. Раджу усім такого майстра, як вона.
-					.comment__options
-						a(href="#").comment__options--share Відповісти
-						a(href="#").comment__options--commenton Коментувати
-		.blog__newcomment
-			.blog__newcomment--title Залиште свій коментар
-			form.blog__newcomment__form
-				label(for="new-comment-name").newcomment-form--label-name Ваше імя
-					input(type="text" name="new-comment-name" id="new-comment-name")
-				label(for="new-comment-text").newcomment-form--label-name Ваш коментар
-					textarea(type="text" name="new-comment-text" id="new-comment-text")
-				input(type="submit" name="new-comment-submit" id="new-comment-submit" value=" прокоментувати").new-comment-submit
+		+b.UL.bread-crumbs
+			+e.item
+				+e.A.link(href="#") Головна
+			+e.item
+				+e.A.link_violet-text.heart-blog Блог і
+		+b.greeting
+			each object in content.greeting
+					+e.text= object['text']
+					+e.photo
+						+e.IMG.img(src= object['srcImg'], alt= object['alt'])
+		+b.social-contacts
+			each object in content.socialContactList
+				+e.A.link_email(href= object['link'])
+					+e.SPAN.title= object['title'] 
+					+e.SPAN.text.underline= object['text']
+		+b.ARTICLE.news-post
+			+e.H2.title This post may contain affiliate links.
+			+e.info
+				+e.date 20/02/2017
+				+e.A.coments(href="#") 63
+			+e.content
+				+e.text
+					+e.P.p A few years ago….My cousin sent me her fun spell book that she made. AND I had to make one right away! They were so fun! I only made one…and my kids have fought over it year after year! I found it hidden under my son’s bed in July. (Original post is here!)
+					+e.P.p I was at the library and they had a bunch of old books there were getting rid of for a quarter a piece…so I decided it was time for the kids to each make their own!
+					+e.P.p And we had a BLAST! They were all old enough to do the majority of it by themselves!
+					+e.P.p This post may contain affiliate links.
+					+e.P.p A few years ago….My cousin sent me her fun spell book that she made. AND I had to make one right away! They were so fun! I only made one…and my kids have fought over it year after year! I found it hidden under my son’s bed in July. (Original post is here!)
+					+e.P.p I was at the library and they had a bunch of old books there were getting rid of for a quarter a piece…so I decided it was time for the kids to each make their own!
+					+e.P.p And we had a BLAST! They were all old enough to do the majority of it by themselves!
+				+e.FIGURE.picture
+					+e.IMG.img(src="../../../static/img/content/blog/post1.png", alt="Post1")
+				+e.text
+					+e.P.p A few years ago….My cousin sent me her fun spell book that she made. AND I had to make one right away! They were so fun! I only made one…and my kids have fought over it year after year! I found it hidden under my son’s bed in July. (Original post is here!)
+		+b.comments
+			+e.H3.title Коментарі
+			+e.list
+				each object in content.commentsList
+					+b.comment
+						+e.date= object['date']
+						+e.text= object['text']
+						+e.options
+							+e.A.link(href=object['answer'])= object['answerText']
+							+e.A.link(href=object['comment'])= object['commentText']
+		+b.newcomment
+			each object in content.newComment
+				+e.H3.title=object['title']
+				+e.FORM.form
+					+e.LABEL.label(for="new-comment-name")=object['labelName']
+						+e.INPUT.input-name(type="text" name="new-comment-name" id="new-comment-name")
+					+e.LABEL.label(for="new-comment-text")= object['labelMessage']
+						+e.TEXTAREA.input-message(type="text" name="new-comment-text" id="new-comment-text")
+					+e.BUTTON.button(name="new-comment-submit" id="new-comment-submit")= object['buttonText']
 
 
 

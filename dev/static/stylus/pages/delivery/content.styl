@@ -1,84 +1,51 @@
-.content.delivery
-	position relative
-	padding 30px 0 20px 0
-	overflow hidden
-	width 100%
-	max-width 1920px
-	margin 0 auto
+.content_delivery
 	&:after
 		content ''
 		position absolute
-		bottom 0px
-		left 0px
+		bottom 0
+		left 0
 		width 1920px
 		height 1141px
 		background-image url('../img/general/delivery/delivery-bg.png')
-		background-position bottom 130px center
+		background-position bottom center
 		z-index -1	
 	.container
 		display flex
 		flex-direction column
-
-.content__bread-crumbs
-	display flex
-	margin-bottom 30px
-
-.content__bread-crumbs--item
-	margin-right 15px
-	&:last-child
-		margin-right 0
-		a
-			&:before
-				display none
-	a
-		display block
-		position relative
-		font-size 14px
-		font-family CenturyGothicBold, sans-serif
-		color #70caf0
-		&:before
-			content ''
-			position absolute
-			top 0px
-			right -7px
-			width 2px
-			height 100%
-			transform rotate(15deg)
-			background-color #70caf0
 			
-.content__bread-crumbs--item.lilac-text
-	a
-		color #ff579a
-
+.bread-crumbs__link_lilac-text
+	color lilac
+		
 .after-registration	
 	padding 20px 20px 30px
-	background-color #fdfbef
+	background-color white
 	display flex
 	flex-direction column
 	align-items center
 	
-.after-registration--title, .delivery-methods--title, .payment-methods--title
-	font-size 30px
-	font-family CenturyGothicBold, sans-serif
-	color #7091f0
+.after-registration__title, .delivery-methods__title, .payment-methods__title
+	font-size hugeText
+	font-family mainTextFont
+	color blue
 	margin-bottom 25px
 
 .after-registration__list
 	display flex
 	flex-direction column
+	text-align left
 	
-.after-registration__list--item
-	font-size 16px
-	font-family CenturyGothicBold, sans-serif
-	color #a5a5a5
+.after-registration__item
+	font-size mediumText
+	font-family mainTextFont
+	color lightGray
 	margin-bottom 15px
 	line-height 1.2
 	&:last-child
 		margin-bottom 0
 	
-.count
-	font-size 18px
-	color #ff579a
+.after-registration__count
+	font-size largeText
+	color lilac
 	
 .delivery-methods
 	padding 30px 0 45px 0
@@ -92,14 +59,18 @@
 	align-items flex-start
 	margin-bottom 30px
 
-.delivery-methods__list--item
+.delivery-methods__item
 	margin 0 100px
 	display flex
 	flex-direction column
 	align-items center
 	text-align center
 	
-.delivery-methods__list--item--icon
+.delivery-methods__title
+	color blue
+	margin-bottom 30px
+	
+.delivery-methods__icon
 	margin-bottom 15px
 	width 100%
 	max-width 64px
@@ -107,37 +78,28 @@
 	display flex
 	justify-content center
 	align-items flex-end
-	img
-		width auto
-		max-width 64px
 
-.delivery-methods__list--item--title
-	font-size 18px
-	font-family CenturyGothicBold, sans-serif
-	color #6d6d6d
+.delivery-methods__img
+	width auto
+	max-width 64px
+
+.delivery-methods__item-title
+	font-size largeText
+	font-family mainTextFont
+	color gray
 	line-height 1.2
 	
-.delivery-methods--title
-	margin-bottom 30px
-	
-.delivery-methods--descr
+.delivery-methods__description
 	width 100%
 	text-align left
-	font-size 16px
-	font-family CenturyGothicBold, sans-serif
-	color #a5a5a5
+	font-size mediumText
+	font-family mainTextFont
+	color lightGray
 	margin-bottom 25px
-	
-.delivery-methods--descr2
-	width 100%
-	text-align left
-	font-size 16px
-	font-family CenturyGothicBold, sans-serif
-	color #a5a5a5
 
 .payment-methods
 	padding 40px 70px
-	background-color #fdfbef
+	background-color white
 	display flex
 	flex-direction column
 	align-items center
@@ -145,8 +107,9 @@
 .payment-methods__list
 	display flex
 	justify-content center
+	padding-bottom 20px
 
-.payment-methods__list--item
+.payment-methods__item
 	width 50%
 	margin-right 150px
 	display flex
@@ -154,39 +117,43 @@
 	&:last-child
 		margin-right 0
 		
-.payment-methods__list--item--top
+.payment-methods__item-top
 	display flex
 	align-items flex-end
 	margin-bottom 25px
 
-.payment-methods__list--item--icon
+.payment-methods__icon
 	min-height 71px
 	display flex
 	justify-content center
 	align-items flex-end
 	margin-right 35px
-	img
-		width auto
-		max-width 100%
+
+.payment-methods__img
+	width auto
+	max-width 100%
 			
-.payment-methods__list--item--title
+.payment-methods__item-title
 	margin-bottom 10px
-	font-size 18px
-	font-family CenturyGothicBold, sans-serif
-	color #6d6d6d
+	font-size largeText
+	font-family mainTextFont
+	color gray
 	
-.payment-methods__list--item--bottom
+.payment-methods__item-bottom
 	width 100%
 	
-.payment-methods__list--item--bottom--descr
-	font-size 14px
-	font-family CenturyGothicBold, sans-serif
-	color #6d6d6d
+.payment-methods__description
+	font-size smallText
+	font-family mainTextFont
+	color gray
+	text-align left
 	
-.payment--descr
-	padding 180px 0 90px 0
+.payment-description
+	padding 20px 0 20px 0 
+	background-color white
+	margin-bottom 30px
 	
-.payment--descr--text
-	font-size 16px
-	font-family CenturyGothicBold, sans-serif
-	color #a5a5a5
+.payment-description__text
+	font-size mediumText
+	font-family mainTextFont
+	color lightGray

@@ -1,13 +1,9 @@
 .blog-header
 	position relative
 	padding 25px 0 25px 0
-	// background-image url('../img/general/main-header-bg.png')
-	// background-repeat cover
-	// background-size right center
-	// background-repeat no-repeat
 	background-color #f9eafd
 	width 100%
-	max-width 1920px
+	// max-width 1920px
 	margin 0 auto
 	&:after
 		content ''
@@ -24,36 +20,12 @@
 		justify-content space-between
 		align-items center
 		z-index 2
-			
-	
-.blog-header__login
-	position relative
-	padding-left 38px
-	align-self flex-start
-	&:before
-		content ''
-		position absolute
-		top 50%
-		left 0px
-		transform translateY(-50%)
-		width 24px
-		height 20px
-		background-image url('../img/general/login.png')
-	a
-		font-size 18px
-		font-family CenturyGothicBold, sans-serif
-		color #7091f0
+		flex-direction row
 
-.blog-header--logo
-	font-size 65px
-	font-family OldComedy, sans-serif
-	color #ff579a
-	font-weight 600
-	
-.blog-header__social
+.blog-header__blog-social
 	display flex
-	.blog-header__social--item
-		margin-right 15px
-		&:last-child
-			margin-right 0
-	
+
+.color-social-item
+	margin-right 15px
+	&:last-child
+		margin-right 0

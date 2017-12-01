@@ -1,18 +1,15 @@
-header.blog-header
++b.HEADER.blog-header
 	.container
-		a(href="#").blog-header--logo 4My Doll
-		ul.blog-header__social
-			li.blog-header__social--item
-				a(href="#")
-					img(src="../../static/img/general/blog/facebook.png", alt="Facebook")
-			li.blog-header__social--item
-				a(href="#")
-					img(src="../../static/img/general/blog/instagram.png", alt="Instagramm")
-			li.blog-header__social--item
-				a(href="#")
-					img(src="../../static/img/general/blog/tweeter.png", alt="Tweeter")
-		.blog-header__login
-			a(href="#") Увійти
-		
-
-
+		+b.A.logo(href="#index.html") 4My Doll
+		+e.UL.blog-social
+			+b.LI.color-social-item
+				+e.A.link(href="#")
+					+e.IMG.img(src="/static/img/general/blog/facebook.png", alt="Facebook")
+			+b.LI.color-social-item
+				+e.A.link(href="#")
+					+e.IMG.img(src="../../static/img/general/blog/instagram.png", alt="Instagramm")
+			+b.LI.color-social-item
+				+e.A.link(href="#")
+					+e.IMG.img(src="../../static/img/general/blog/tweeter.png", alt="Tweeter")
+		+b.login
+			+e.A.link(href="#") Увійти
