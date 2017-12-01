@@ -1,20 +1,14 @@
-section.content.packaging
++b.SECTION.content_packaging
 	.container
-		ul.content__bread-crumbs
-			li.content__bread-crumbs--item
-				a(href="#") Головна
-			li.content__bread-crumbs--item.yellow-text
-				a Подарункова упаковка
-		.packaging__list
-			.packaging__list__item
-				a(href="#").packaging__list__item--img
-					img(src="../../../static/img/content/packaging/item1.png", alt="Item 1")
-				a(href="#").packaging__list__item--link Обгортковий папір
-			.packaging__list__item
-				a(href="#").packaging__list__item--img
-					img(src="../../../static/img/content/packaging/item2.png", alt="Item 2")
-				a(href="#").packaging__list__item--link Подарункова коробочка
-			.packaging__list__item
-				a(href="#").packaging__list__item--img
-					img(src="../../../static/img/content/packaging/item3.png", alt="Item 3")
-				a(href="#").packaging__list__item--link Пакет для подарунків
+		+b.UL.bread-crumbs
+			+e.item
+				+e.A.link(href="#") Головна
+			+e.item
+				+e.A.link_yellow-text Подарункова упаковка
+		+b.goods-list
+			each object in content.goodsPackagin
+				+b.ARTICLE.goods-item_packaging
+					+e.A.link(href=object['link'])
+						+b.FIGURE.item-img(data-text=object['dataText'])
+							+e.IMG.img(src=object['srcImg'], alt=object['alt'])
+						+e.title= object['title']
