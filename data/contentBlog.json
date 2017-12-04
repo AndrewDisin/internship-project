@@ -1,0 +1,49 @@
+{
+  "greeting" : {
+    "info" : {
+      "text": "Привіт! :) Я дуже рада, що Ви  бажаєте спілкуватися зі мною. Ви багаті ідеями? Хочете чимось поділитися, щось обговорити?  Ласкаво прошу :)   - залюбки будемо вести діалоги!",
+      "srcImg" : "/static/img/general/blog/photo.png",
+      "alt" : "Photo"
+    }
+  },
+  "socialContactList" : {
+    "email": {
+      "link" : "#",
+      "title" : "Email :",
+      "text" : "amber {at} crazylittleprojects.com"
+    },
+    "twitter": {
+      "link" : "#",
+      "title" : "Twitter :",
+      "text" : "amber {at} crazylittleprojects.com"
+    },
+    "facebook": {
+      "link" : "#",
+      "title" : "Facebook :",
+      "text" : "amber {at} crazylittleprojects.com"
+    },
+    "googlePlus": {
+      "link" : "#",
+      "title" : "Google Plus :",
+      "text" : "amber {at} crazylittleprojects.com"
+    }
+  },
+  "commentsList" : {
+    "comment1": {
+      "date" : "22 березня 2017 року",
+      "text" : "Дуже оригінальні подушки. Зі смаком підібрано тканину, під самий інтерєр дитячої. Рада, що звернулась до Наталії. Раджу усім такого майстра, як вона.",
+      "answer" : "#",
+      "comment" : "#",
+      "answerText" : "Відповісти",
+      "commentText" : "Коментувати"
+    }
+  },
+  "newComment" : {
+    "comment": {
+      "title" : "Залиште свій коментар",
+      "labelName" : "Ваше імя",
+      "labelMessage" : "Ваш коментар",
+      "buttonText" : "прокоментувати"
+    }
+  }
+}

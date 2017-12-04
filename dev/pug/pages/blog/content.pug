@@ -6,12 +6,12 @@
 			+e.item
 				+e.A.link_violet-text.heart-blog Блог і
 		+b.greeting
-			each object in content.greeting
+			each object in contentBlog.greeting
 					+e.text= object['text']
 					+e.photo
 						+e.IMG.img(src= object['srcImg'], alt= object['alt'])
 		+b.social-contacts
-			each object in content.socialContactList
+			each object in contentBlog.socialContactList
 				+e.A.link_email(href= object['link'])
 					+e.SPAN.title= object['title'] 
 					+e.SPAN.text.underline= object['text']
@@ -36,7 +36,7 @@
 		+b.comments
 			+e.H3.title Коментарі
 			+e.list
-				each object in content.commentsList
+				each object in contentBlog.commentsList
 					+b.comment
 						+e.date= object['date']
 						+e.text= object['text']
@@ -44,7 +44,7 @@
 							+e.A.link(href=object['answer'])= object['answerText']
 							+e.A.link(href=object['comment'])= object['commentText']
 		+b.newcomment
-			each object in content.newComment
+			each object in contentBlog.newComment
 				+e.H3.title=object['title']
 				+e.FORM.form
 					+e.LABEL.label(for="new-comment-name")=object['labelName']

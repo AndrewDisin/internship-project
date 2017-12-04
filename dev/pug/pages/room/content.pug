@@ -6,7 +6,7 @@
 			+e.item
 				+e.A.link_pink-text Дитяча кімната
 		+b.goods-list
-			each object in content.goodsRoom
+			each object in contentRoom.goodsRoom
 				+b.ARTICLE.goods-item
 					+e.A.link(href=object['link'])
 						+b.FIGURE.item-img(data-text=object['dataText'])

@@ -1,0 +1,25 @@
+{
+  "goodsPackagin" : {
+    "paper": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/packaging/item1.png",
+      "title" : "Обгортковий папір",
+      "alt": "Item 1"
+    },
+    "capsule": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/packaging/item2.png",
+      "title" : "Подарункова коробочка",
+      "alt": "Item 2"
+    },
+    "package": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/packaging/item3.png",
+      "title" : "Пакет для подарунків",
+      "alt": "Item 3"
+    }
+  }
+}

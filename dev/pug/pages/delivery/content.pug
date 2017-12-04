@@ -8,24 +8,24 @@
 		+b.after-registration
 			+e.H2.title Після оформлення замовлення
 			+e.UL.list
-				each object in content.afterRegistrationList
+				each object in contentDelivery.afterRegistrationList
 					+e.LI.item
 						+e.SPAN.count= object['count']
 						+e.SPAN.text=object['text']
 		+b.delivery-methods
 			+e.H2.title Способи і терміни доставки
 			+e.list
-				each object in content.deliveryMethodsList
+				each object in contentDelivery.deliveryMethodsList
 					+e.item
 						+e.icon
 							+e.IMG.img(src= object['srcImg'], alt=object['alt'])
 						+e.item-title= object['title']
-			each object in content.deliveryMethodsDescription
+			each object in contentDelivery.deliveryMethodsDescription
 				+e.description= object
 		+b.payment-methods
 			+e.title Способи оплати
 			+e.list
-				each object in content.paymentMethodsList
+				each object in contentDelivery.paymentMethodsList
 					+e.item
 						+e.item-top
 							+e.icon
@@ -34,5 +34,5 @@
 						+e.item-bottom
 							+e.description= object['description']
 		+b.payment-description
-			each object in content.paymentDescription
+			each object in contentDelivery.paymentDescription
 				+e.text= object

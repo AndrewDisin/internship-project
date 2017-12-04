@@ -1,0 +1,18 @@
+{
+  "goodsRoom" : {
+    "babyBorn": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/room/item1.png",
+      "title" : "Постільна білизна",
+      "alt": "Item 1"
+    },
+    "barbie": {
+      "link" : "#",
+      "dataText" : "Перейти к товарам",
+      "srcImg" : "/static/img/content/room/item2.png",
+      "title" : "Декор / Покривала в стилі печворк",
+      "alt": "Item 2"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "newYearProductList" : {
+    "spruce": {
+      "srcImg" : "/static/img/general/newyear/item1.png",
+      "alt": "Item 1",
+      "title" : "Колекція ялинкових прикрас",
+      "description": "Вишивка хрестиком, декоративними швами",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "bulbs": {
+      "srcImg": "/static/img/general/newyear/item2.png",
+      "alt": "Item 2",
+      "title": "Іграшки із лампочок",
+      "description" : "Плетені гачком",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "ekin": {
+      "srcImg": "/static/img/general/newyear/item3.png",
+      "alt": "Item 3",
+      "title": "Ялинки",
+      "description" : "Екібани",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "pots": {
+      "srcImg": "/static/img/general/newyear/item4.png",
+      "alt": "Item 4",
+      "title": "Іграшки ялинкові",
+      "description" : "В стилі декупаж",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    },
+    "stockings": {
+      "srcImg": "/static/img/general/newyear/item5.png",
+      "alt": "Item 5",
+      "title": "Різдвяні панчохи",
+      "description" : "В стилі декупаж",
+      "cost": "560",
+      "currency" : "грн.",
+      "order": "в кошик"
+    }
+  }
+}
