@@ -1,10 +1,4 @@
-.content.basket
-	position relative
-	padding 30px 0 20px 0
-	overflow hidden
-	width 100%
-	max-width 1920px
-	margin 0 auto
+.content_basket
 	&:after
 		content ''
 		position absolute
@@ -18,89 +12,72 @@
 		display flex
 		flex-direction column
 		padding 0
-		align-items center
-
-.content__bread-crumbs
-	display flex
-	margin-bottom 30px
-	margin-left 15px
-	width 100%
-	text-align left
-
-.content__bread-crumbs--item
-	margin-right 15px
-	&:last-child
-		margin-right 0
-		a
-			&:before
-				display none
-	a
-		display block
-		position relative
-		font-size 14px
-		font-family CenturyGothicBold, sans-serif
-		color #70caf0
-		&:before
-			content ''
-			position absolute
-			top 0px
-			right -7px
-			width 2px
-			height 100%
-			transform rotate(15deg)
-			background-color #70caf0
-
+		align-items flex-start
 	
-.content__bread-crumbs--item.lilac-text
-	a
-		color #ff579a
+.bread-crumbs__link_lilac-text
+	color lilac
 		
-.basket--title
-	font-size 30px
-	font-family CenturyGothicBold, sans-serif
-	color #7091f0
+.content__title
+	width 100%
+	color blue
 	margin-bottom 40px
+	text-align center
 	
-.basket__info
+.content__info
 	width 100%
 	display flex
 	justify-content center
 	
-.basket__info__form
+.content__form
 	display flex
 	flex-direction column
 	align-items center
 	margin-right 15px
 	width 100%
 	max-width 385px 
-	label
-		width 100%
-		select
-			width 100%
-			padding 10px 15px
-			border-radius 5px
-			border 2px solid #dbc4e1
-			font-size 16px
-			font-family CenturyGothicBold, sans-serif
-			background-color #fde9f1
-			color #9d9d9d
-		margin-bottom 20px
-	input
-		width 100%
-		margin-bottom 20px
-		padding 10px 15px
-		border-radius 5px
-		border 2px solid #dbc4e1
-		font-size 16px
-		font-family CenturyGothicBold, sans-serif
-		color #9d9d9d
-	.basket-form-submit
-		max-width 275px
-		border none
-		background-color #abe6ff
-		color #fff
-		margin-top 75px
-		
+
+.content__label
+	width 100%
+	margin-bottom 20px
+
+.content__select
+	width 100%
+	padding 10px 15px
+	border-radius 5px
+	border 2px solid violet
+	font-size mediumText
+	font-family mainTextFont
+	background-color white
+	color lightGray
+
+
+.content__input
+	width 100%
+	margin-bottom 20px
+	padding 10px 15px
+	border-radius 5px
+	border 2px solid violet
+	font-size mediumText
+	font-family mainTextFont
+	color lightGray
+
+.content__button
+	max-width 275px
+	border none
+	background-color lightBlue
+	color white
+	margin-top 75px
+	border-radius 5px
+	padding 10px
+	cursor pointer
+
+.basket-items
+	width 100%
+	max-width 610px
+	display flex
+	flex-direction column
+	align-items center
+
 .basket__list
 	width 100%
 	max-width 610px
@@ -108,50 +85,51 @@
 	flex-direction column
 	margin-left 15px
 	
-.basket__list__item
+.basket-item
 	width 100%
 	display flex
-	background-color #fefbf1
+	background-color white
 	padding 15px 40px
 	margin-bottom 20px
 	align-items center
 	
-.basket__list__item--img
+.basket-item__picture
 	width 100%
 	max-width 160px
 	margin-right 30px
-	img
-		width auto
-		max-width 100%
+
+.basket-item__img
+	width auto
+	max-width 100%
 		
-.basket__list__item__right
+.basket-item__right
 	display flex
 	flex-direction column
 	width 100%
 	
-.basket__list__item__right--title
-	font-size 20px
-	font-family CenturyGothicBold, sans-serif
-	color #9d9d9d
+.basket-item__title
+	font-size largeText
+	font-family mainTextFont
+	color lightGray
 	margin-bottom 15px
 	
-.basket__list__item__right--price
-	font-size 20px
-	font-family CenturyGothicBold, sans-serif
-	color #ff579a
+.basket-item__price
+	font-size largeText
+	font-family mainTextFont
+	color pink
 
-.basket__list__item__right__calc
+.basket-item__calc
 	padding-top 5px
 	margin-bottom 15px
 	display flex
 	align-items center
 	
-.basket__list__item__right__calc, .basket__list__item__right__price--descr
-	font-size 16px
-	font-family CenturyGothicBold, sans-serif
-	color #9d9d9d
+.basket-item__calc, .basket-item__description
+	font-size mediumText
+	font-family mainTextFont
+	color lightGray
 	
-.basket__list__item__right__calc--kil
+.basket-item__label
 	position relative
 	margin-right 15px
 	&:before
@@ -161,10 +139,10 @@
 		top 1px
 		width 39px
 		height calc(50% - 1px)
-		background-color #fdeaf2
+		background-color white
 		border-radius 0 5px 0 0 
-		border-left 1px solid #dbc4e1 
-		border-bottom 1px solid #dbc4e1 
+		border-left 1px solid violet 
+		border-bottom 1px solid violet 
 		background-image url('../img/general/basket/arrow-up.png')
 		background-position center center
 		background-repeat no-repeat
@@ -175,56 +153,52 @@
 		bottom 1px
 		width 39px
 		height calc(50% - 1px)
-		background-color #fdeaf2
+		background-color white
 		border-radius 0 0 5px 0 
-		border-left 1px solid #dbc4e1 
+		border-left 1px solid violet 
 		background-image url('../img/general/basket/arrow-down.png')
 		background-position center center
 		background-repeat no-repeat
-	input
+
+.basket-item__input
 		text-align center
 		width 100%
 		max-width 90px
 		margin-left 15px
 		padding 10px 45px 10px 5px
 		border-radius 5px
-		border 1px solid #dbc4e1 
-		color #9d9d9d
-		font-size 16px
-		font-family CenturyGothicBold, sans sans-serif
+		border 1px solid violet
+		color lightGray
+		font-size mediumText
+		font-family mainTextFont
 		
 
-.basket__list__item__right__price
+.basket-item__right-price
 	display flex
 	padding 20px 0 20px
 	align-items flex-end
-	border-top 1px solid #ffda39
+	border-top 1px solid yellow
 	
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
 	-webkit-appearance none 
 	margin 0
 
-.basket__list__item__right__price--descr
+.basket-item__description
 	margin-right 60px
 
-.basket-items
-	width 100%
-	max-width 610px
-	display flex
-	flex-direction column
-	align-items center
-
-.basket__order-btn
+.order-button
 	margin-top 30px
 	margin-bottom 90px
 	display block
 	width 100%
 	max-width 275px
 	padding 15px
-	font-size 18px
-	font-family CenturyGothicBold,sans-serif
-	color #fff
+	font-size largeText
+	font-family mainTextFont
+	color white
 	text-align center
-	background-color #ff6c00
+	border none
+	background-color orange
 	border-radius 5px
+	cursor pointer
 		
