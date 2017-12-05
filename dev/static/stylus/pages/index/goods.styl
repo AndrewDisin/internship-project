@@ -2,7 +2,6 @@
 	position relative
 	padding 45px 0 5px 0
 	width 100%
-	// max-width max-width-page
 	margin 0 auto
 	z-index 2
 	overflow hidden
@@ -27,31 +26,30 @@
 	&.container
 		align-items center
 		display block
-		
-.goods__title
-	position relative
-	color purple
-	margin-bottom 40px
-	&:before
-		content ''
-		position absolute
-		top -13px
-		left 0px
-		transform translateX(-60%)
-		width 214px
-		height 37px
-		background-image url('../img/general/star-before.png')
-		background-repeat no-repeat
-	&:after
-		content ''
-		position absolute
-		top 10px
-		right -30px
-		transform translateX(100%)
-		width 104px
-		height 37px
-		background-image url('../img/general/star-after.png')
-		background-repeat no-repeat
+	&__title
+		position relative
+		color purple
+		margin-bottom 40px
+		&:before
+			content ''
+			position absolute
+			top -13px
+			left 0px
+			transform translateX(-60%)
+			width 214px
+			height 37px
+			background-image url('../img/general/star-before.png')
+			background-repeat no-repeat
+		&:after
+			content ''
+			position absolute
+			top 10px
+			right -30px
+			transform translateX(100%)
+			width 104px
+			height 37px
+			background-image url('../img/general/star-after.png')
+			background-repeat no-repeat
 	
 .goods-list
 	display flex
@@ -64,45 +62,41 @@
 	padding-top 15px
 	padding-left 15px
 	max-width 25%
-
-.goods-item__link
-	position relative
-	display flex
-	flex-direction column
-	align-items center
-	&:hover
-		.item-img
-			position relative
-			&:before
-				content attr(data-text)
-				position absolute
-				display flex
-				justify-content center
-				align-items center
-				color white
-				font-size largeText
-				font-family mainTextFont
-				top 0px
-				left 0px
-				width 100%
-				height 100%
-				background-color rgba(35,34,32,0.5)
-				border 2px solid blue
-				-webkit-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
-				-moz-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
-				box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
-
-
-.item-img__img
-	width 100%
+	&__link
+		position relative
+		display flex
+		flex-direction column
+		align-items center
+		&:hover
+			.item-img
+				position relative
+				&:before
+					content attr(data-text)
+					position absolute
+					display flex
+					justify-content center
+					align-items center
+					color white
+					font-size largeText
+					font-family mainTextFont
+					top 0px
+					left 0px
+					width 100%
+					height 100%
+					background-color rgba(35,34,32,0.5)
+					border 2px solid blue
+					-webkit-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
+					-moz-box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
+					box-shadow 0px 5px 24px 0px rgba(35,34,32,1)
+	&__title
+		font-size smallText
+		font-family mainTextFont
+		color blue
+		border-bottom 2px solid blue
+		text-align center
 
 .item-img
 	width 100%
 	margin-bottom 20px
-	
-.goods-item__title
-	font-size smallText
-	font-family mainTextFont
-	color blue
-	border-bottom 2px solid blue
-	text-align center
+	&__img
+		width 100%

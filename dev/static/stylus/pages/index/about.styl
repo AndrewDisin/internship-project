@@ -2,7 +2,6 @@
 	position relative
 	padding 100px 0 46px 0
 	width 100%
-	// max-width max-width-page
 	margin 0 auto
 	overflow hidden
 	&:before
@@ -23,72 +22,106 @@
 		height 364px
 		background-image url('../img/general/girl.png')
 		z-index -1	
-	&.container
+	.container
 		display block
 		text-align center
-
-
-.about__title
-	position relative
-	color blue
-	text-align center
-	margin-bottom 35px
-	&:before
-		content ''
-		position absolute
-		top -20px
-		left -17px
-		width 104px
-		height 38px
-		transform translate(-100%, 0)
-		background-image url('../img/general/star-about-before.png')
-	&:after
-		content ''
-		position absolute
-		bottom -15px
-		right -14px
-		width 104px
-		height 38px
-		transform translate(100%, 0)
-		background-image url('../img/general/star-about-after.png')
-
-.about__content
-	display flex
+	&__title
+		position relative
+		color blue
+		text-align center
+		margin-bottom 35px
+		&:before
+			content ''
+			position absolute
+			top -20px
+			left -17px
+			width 104px
+			height 38px
+			transform translate(-100%, 0)
+			background-image url('../img/general/star-about-before.png')
+		&:after
+			content ''
+			position absolute
+			bottom -15px
+			right -14px
+			width 104px
+			height 38px
+			transform translate(100%, 0)
+			background-image url('../img/general/star-about-after.png')
+	&__content
+		display flex
 	
 .about-person
 	width 100%
 	max-width 430px
 	display flex
 	flex-direction column
-	align-items center
-	
-.about-person__avatar
+	align-items center	
+	&__avatar
+		width 100%
+		max-width 250px
+		display flex
+		justify-content center
+		align-items center
+		border-radius 50%
+		margin-bottom 25px
+	&__img
+		width 100%	
+	&__info
+		width 100%
+		display flex
+		flex-direction column	
+	&__description
+		text-align left
+		font-size smallText
+		font-family mainTextFont
+		color gray
+		margin-bottom 6px
+		-moz-transition all 0.2s ease-in-out
+		-o-transition all 0.2s ease-in-out
+		-webkit-transition all 0.2s ease-in-out
+		transition all 0.2s ease-in-out
+	&__links
+		width 100%
+		display flex
+		justify-content space-between	
+	&__goblog
+		position relative
+		padding 6px
+		padding-left 39px
+		font-size smallText
+		font-family mainTextFont
+		color lightOrange
+		text-decoration underline
+		&:before
+			content ''
+			position absolute
+			top 50%
+			left 0
+			width 28px
+			height 26px
+			transform translate(0, -50%)
+			background-image url('../img/general/goblog.png')	
+	&__readmore
+		position relative
+		padding 6px
+		font-size smallText
+		font-family mainTextFont
+		color blue
+		text-decoration underline
+		cursor pointer
+		
+.about-production
 	width 100%
-	max-width 250px
-	display flex
-	justify-content center
-	align-items center
-	border-radius 50%
-	margin-bottom 25px
-
-.about-person__img
-	width 100%
-	
-.about-person__info
-	width 100%
+	min-width 640px
 	display flex
 	flex-direction column
-	
-.about-person__description
-	text-align left
-	font-size smallText
-	font-family mainTextFont
-	color gray
-	margin-bottom 6px
-	-moz-transition all 0.2s ease-in-out
-	-o-transition all 0.2s ease-in-out
-	-webkit-transition all 0.2s ease-in-out
-	transition all 0.2s ease-in-out
+	align-items center
+	&__description
+		font-size mediumText
+		font-family mainTextFont
+		color gray
+
 
 .hidden
 	-moz-transition all 0.2s ease-in-out
@@ -96,45 +129,6 @@
 	-webkit-transition all 0.2s ease-in-out
 	transition all 0.2s ease-in-out
 	display none
-	
-.about-person__links
-	width 100%
-	display flex
-	justify-content space-between
-	
-.about-person__goblog
-	position relative
-	padding 6px
-	padding-left 39px
-	font-size smallText
-	font-family mainTextFont
-	color lightOrange
-	text-decoration underline
-	&:before
-		content ''
-		position absolute
-		top 50%
-		left 0
-		width 28px
-		height 26px
-		transform translate(0, -50%)
-		background-image url('../img/general/goblog.png')
-	
-.about-person__readmore
-	position relative
-	padding 6px
-	font-size smallText
-	font-family mainTextFont
-	color blue
-	text-decoration underline
-	cursor pointer
-
-.about-production
-	width 100%
-	min-width 640px
-	display flex
-	flex-direction column
-	align-items center
 
 .video
 	height 100%
@@ -146,18 +140,13 @@
 	justify-content center
 	align-items center
 	border-radius 15px
-	overflow hidden
-	
-.video__iframe
-	border-radius 15px
-	width 100%
-	max-width 425px
-	height 100%
+	overflow hidden	
+	&__iframe
+		border-radius 15px
+		width 100%
+		max-width 425px
+		height 100%
 		
-.about-production__description
-	font-size mediumText
-	font-family mainTextFont
-	color gray
 
 	
 

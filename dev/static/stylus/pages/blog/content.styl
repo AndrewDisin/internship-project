@@ -1,14 +1,15 @@
-.content_blog
-	&:after
-		content ''
-		position absolute
-		bottom 0px
-		left 0px
-		width 1920px
-		height 1620px
-		background-image url('../img/general/blog/blog-bg.png')
-		background-position center center
-		z-index -1	
+.content
+	&_blog
+		&:after
+			content ''
+			position absolute
+			bottom 0px
+			left 0px
+			width 1920px
+			height 1620px
+			background-image url('../img/general/blog/blog-bg.png')
+			background-position center center
+			z-index -1	
 	.container
 		display flex
 		flex-direction column
@@ -33,217 +34,178 @@
 	display flex
 	align-items center
 	margin-bottom 10px
-
-.greeting__text
-	width 100%
-	max-width 1050px
-	padding 50px 80px 45px
-	border 2px solid lightPink
-	border-radius 5px
-	font-size mediumText
-	font-family mainTextFont
-	color blue
-	text-align left
-
-.greeting__photo
-	margin-left -70px
-	width 100%
-	max-width 191px
-	border-radius 50%
-
-.greeting__img
-	width auto
-	max-width 100%
+	&__text
+		width 100%
+		max-width 1050px
+		padding 50px 80px 45px
+		border 2px solid lightPink
+		border-radius 5px
+		font-size mediumText
+		font-family mainTextFont
+		color blue
+		text-align left
+	&__photo
+		margin-left -70px
+		width 100%
+		max-width 191px
+		border-radius 50%
+	&__img
+		width auto
+		max-width 100%
 
 .social-contacts
 	display flex
 	flex-wrap wrap
 	margin-right 40px
 	margin-bottom 55px
-
-.social-contacts__link
-	font-size largeText
-	font-family mainTextFont
-	width 50%
-	margin-bottom 20px
-
-.social-contacts__link
-	color lightBlue
-	.underline
-		border-bottom 2px solid lightBlue
-
-// .social-contacts__link_twitter
-// 	color lightGreen
-// 	.underline
-// 		border-bottom 2px solid lightGreen
-	
-// .social-contacts__link_facebook
-// 	color orange
-// 	.underline
-// 		border-bottom 2px solid orange
-	
-// .social-contacts__link_googleplus
-// 	color lilac
-// 	.underline
-		// border-bottom 2px solid lilac
- 
-.news-post__picture
-	width 100%
-	max-width 1170px
-.news-post__img
-	width auto
-	max-width 100%
-	padding 20px 0
+	&__link
+		font-size largeText
+		font-family mainTextFont
+		width 50%
+		margin-bottom 20px
+	&__link
+		color lightBlue
+		.underline
+			border-bottom 2px solid lightBlue
 
 .news-post
 	margin-bottom 60px
 	display flex
 	flex-direction column
-	
-.news-post__title
-	width 100%
-	font-size bigText
-	font-family mainTextFont
-	color blue
-	margin-bottom 20px
-	
-.news-post__info
-	display flex
-	margin-bottom 30px
-	
-.news-post__date
-	font-size smallText
-	font-family mainTextFont
-	color lightGray
-	margin-right 60px
-	
-.news-post__coments
-	position relative
-	font-size smallText
-	font-family mainTextFont
-	color lightGray
-	&:before
-		content ''
-		position absolute
-		right -9px
-		bottom -3px
-		transform translateX(100%)
-		width 24px
-		height 23px
-		background-image url('../img/general/blog/comments.png')
-		
-.news-post__text
-	font-size mediumText
-	font-family mainTextFont
-	color lightGray
-	line-height 1.2
-
-.news-post__p
-	margin-bottom 10px
-	text-align left
+	&__picture
+		width 100%
+		max-width 1170px
+	&__img
+		width auto
+		max-width 100%
+		padding 20px 0	
+	&__title
+		width 100%
+		font-size bigText
+		font-family mainTextFont
+		color blue
+		margin-bottom 20px	
+	&__info
+		display flex
+		margin-bottom 30px	
+	&__date
+		font-size smallText
+		font-family mainTextFont
+		color lightGray
+		margin-right 60px	
+	&__coments
+		position relative
+		font-size smallText
+		font-family mainTextFont
+		color lightGray
+		&:before
+			content ''
+			position absolute
+			right -9px
+			bottom -3px
+			transform translateX(100%)
+			width 24px
+			height 23px
+			background-image url('../img/general/blog/comments.png')		
+	&__text
+		font-size mediumText
+		font-family mainTextFont
+		color lightGray
+		line-height 1.2
+	&__p
+		margin-bottom 10px
+		text-align left
 	
 .comments
 	width 100%
 	display flex
 	flex-direction column
-	
-.comments__title
-	color blue
-	margin-bottom 5px
-
-.comments__list
-	width 100%
-	display flex
-	flex-direction column
+	&__title
+		color blue
+		margin-bottom 5px
+	&__list
+		width 100%
+		display flex
+		flex-direction column
 	
 .comment
 	padding 35px 40px
 	border-top 1px solid yellow
-
-.comment__date
-	font-size smallText
-	font-family lightTextFont
-	color gray
-	margin-bottom 25px
+	&__date
+		font-size smallText
+		font-family lightTextFont
+		color gray
+		margin-bottom 25px	
+	&__text
+		width 100%
+		font-size smallText
+		font-family lightTextFont
+		color gray
+		margin-bottom 25px
+		text-align left
+	&__options
+		display flex
+		justify-content flex-end	
+	&__link
+		display block
+		margin-right 50px
+		font-size mediumText
+		font-family mainTextFont
+		color gray
+		border-bottom 2px solid gray
+		&:last-child
+				margin-right 0
 	
-.comment__text
-	width 100%
-	font-size smallText
-	font-family lightTextFont
-	color gray
-	margin-bottom 25px
-	text-align left
-
-.comment__options
-	display flex
-	justify-content flex-end
-	
-.comment__link
-	display block
-	margin-right 50px
-	font-size mediumText
-	font-family mainTextFont
-	color gray
-	border-bottom 2px solid gray
-	&:last-child
-		margin-right 0
-			
 .newcomment
 	width 100%
 	display flex
 	flex-direction column
 	padding 18px 55px 18px 20px
 	border-top 8px solid lightYellow
-	background-color rgba(254, 247,235,.49)
-	
-.newcomment__title
-	font-size largeText
-	font-family lightTextFont
-	color gray
-	margin-bottom 15px
-	
-.newcomment__form
-	width 100%
-	display flex
-	flex-direction column
-	
-.newcomment__label
-	width 100%
-	font-size smallText
-	font-family lightTextFont
-	color gray
-	display flex
-	align-items flex-start
-	margin-bottom 20px
-		
-.newcomment__input-name
-	width 100%
-	max-width 900px
-	border 1px solid lightYellow
-	padding 5px
-	font-size smallText
-	font-family lightTextFont
-	color gray
-	margin-left 120px
-
-.newcomment__input-message
-	width 100%
-	max-width 900px
-	min-height 110px
-	border 1px solid lightYellow
-	padding 5px
-	font-size smallText
-	font-family lightTextFont
-	color gray
-	margin-left 80px
-	
-.newcomment__button
-	background-color orange
-	color white
-	width 100%
-	max-width 180px
-	padding 15px
-	border none
-	border-radius 30px
-	margin-left 185px
-	cursor pointer
+	background-color rgba(254, 247,235,.49)	
+	.newcomment__title
+		font-size largeText
+		font-family lightTextFont
+		color gray
+		margin-bottom 15px	
+	&__form
+		width 100%
+		display flex
+		flex-direction column	
+	&__label
+		width 100%
+		font-size smallText
+		font-family lightTextFont
+		color gray
+		display flex
+		align-items flex-start
+		margin-bottom 20px		
+	&__input-name
+		width 100%
+		max-width 900px
+		border 1px solid lightYellow
+		padding 5px
+		font-size smallText
+		font-family lightTextFont
+		color gray
+		margin-left 120px
+	&__input-message
+		width 100%
+		max-width 900px
+		min-height 110px
+		border 1px solid lightYellow
+		padding 5px
+		font-size smallText
+		font-family lightTextFont
+		color gray
+		margin-left 80px	
+	&__button
+		background-color orange
+		color white
+		width 100%
+		max-width 180px
+		padding 15px
+		border none
+		border-radius 30px
+		margin-left 185px
+		cursor pointer
